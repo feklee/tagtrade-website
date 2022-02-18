@@ -1,0 +1,457 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>TagTrade Wiki | PmWiki / Basic PmWiki editing rules browse</title>
+  <meta http-equiv="Content-type" content="text/html;charset=iso-8859-1" />
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel='stylesheet' href='/pmwiki/pub/skins/tagtrade/tagtrade.css' type='text/css' />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<meta name='description' content='PmWiki&#039;s basic edit syntax' />
+
+</head>
+<body>
+<!--PageHeaderFmt-->
+  <div id='wikilogo'><a href=''><img src='/pmwiki/pub/skins/tagtrade/tagtrade-32.gif'
+    alt='TagTrade Wiki' border='0' /></a></div>
+  <div id='wikihead'>
+  </div>
+<!--/PageHeaderFmt-->
+  <table id='wikimid' width='100%' cellspacing='0' cellpadding='0'><tr>
+<!--PageLeftFmt-->
+      <td id='wikileft' valign='top'>
+        <p class='sidehead'> <a class='wikilink' href='/Main/HomePage'>Main</a>
+</p><ul><li><a class='wikilink' href='/Main/Systems'>Systems</a>
+</li><li><a class='wikilink' href='/Main/DiscussionGroups'>Discussion groups</a>
+</li><li><a class='wikilink' href='/Main/Jabber'>Jabber group chat</a>
+</li><li><a class='wikilink' href='/Main/Irc'>IRC channel</a>
+</li><li><a class='wikilink' href='/Main/Events'>Events</a>
+</li><li><a class='wikilink' href='/Main/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Main/WikiSandbox'>Wiki sandbox</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Devel/HomePage'>Devel</a>
+</p><ul><li><a class='wikilink' href='/Devel/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Devel/BackEnd'>Back end</a>
+</li><li><a class='wikilink' href='/Devel/FrontEnd'>Front end</a>
+</li><li><a class='wikilink' href='/Devel/AuthoringPages'>Authoring pages</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Profiles/HomePage'>Profiles</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/PmWiki/PmWiki'>PmWiki</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/DocArchive/HomePage'>Doc archive</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/Portal/HomePage'>Portal</a>
+</p><ul><li><a class='wikilink' href='/Portal/WikiSandbox'>Wiki sandbox</a>
+</li></ul>
+</td>
+<!--/PageLeftFmt-->
+      <td id='wikibody' valign='top'>
+<!--PageTitleFmt-->
+        <div id='wikititle'>
+          <div class='pagegroup'><a href='/PmWiki'>PmWiki</a> /</div>
+          <h1 class='pagetitle'>Basic PmWiki editing rules</h1></div>
+<!--PageText-->
+<div id='wikitext'>
+<p>
+<a name='trailstart' id='trailstart'></a> 
+</p><div style="clear:right; float:right; font-size:smaller; background-color:#eee;" >
+<p><span class='wikitrail'>&lt; <a class='wikilink' href='/PmWiki/Introduction'>Introduction</a> | <a class='wikilink' href='/PmWiki/DocumentationIndex#trailstart#trailend'>Documentation Index</a> | <a class='wikilink' href='/PmWiki/CreatingNewPages'>Creating new pages</a> &gt;</span> 
+</p></div>
+<div style="clear:right;" ><span class='frame rfloat' style='font-size: smaller; background-color: #ffffcc;'>authors (basic) </span>
+</div>
+<p>The pages on this site are <a class='wikilink' href='/PmWiki/WikiWikiWeb'>Wiki Wiki Web</a> pages, which means that pages can be created and edited by multiple authors. To edit a page, click the <strong>Edit</strong> link that exists <strong>somewhere</strong> on the page, usually in the header or footer. Some pages may be <a class='wikilink' href='/PmWiki/Passwords'>password-protected</a>, depending on the system's security policies, but many systems allow open editing of pages.
+</p>
+<p class='vspace'>PmWiki is not <a class='urllink' href='http://www.wikipedia.com/wiki/WYSIWYG' rel='nofollow'>WYSIWYG</a> - When editing a page, you see the <em>markup text</em> that describes the content of the page.  The basic rules for page markup are simple:
+</p><ol><li>Use a blank line to start a new paragraph <span style='font-size:83%'><a href='#Paragraphs'>more</a></span>.
+</li><li>To make a list, start each line with # for numbered (ordered) lists or * for bulleted (unordered) lists <span style='font-size:83%'><a href='#lists'>more</a></span>.
+</li><li>To make a heading, start a line with two or more ! marks; !! is a subheading, and !!! is a sub-subheading <span style='font-size:83%'><a href='#headings'>more</a></span>.
+</li><li>To emphasize text, enclose it in 2 or 3 <em>single quotes</em>; <code class='escaped'>''text''</code> for italics or <code class='escaped'>'''text'''</code> for bold <span style='font-size:83%'><a href='#emphasis'>more</a></span>.
+</li><li>To make a link to another page, enclose the page's name in double brackets; for example <code class='escaped'>[[basic editing]]</code> links to this page <span style='font-size:83%'><a href='#links'>more</a></span>.
+</li><li>To make a link to another site, type its address, such as <a class='urllink' href='http://example.com/' rel='nofollow'>http://example.com/</a> <span style='font-size:83%'> <a href='#links'>more</a></span>.
+</li></ol><p class='vspace'><strong>If you want to experiment with editing a page, try it on the <a class='wikilink' href='/Main/WikiSandbox'>Wiki Sandbox</a>.</strong> You can <a class='wikilink' href='/Main/WikiSandbox?action=edit'>edit the Wiki Sandbox</a> without affecting anything important on this site. On talk pages and discussions, it's courteous to <strong>sign</strong> your contribution; using ~~~ effectively 'signs' the name that you provide in the Author field on the Page Edit form.
+</p>
+<div class='vspace'></div><h2>Examples of common markups</h2>
+<p>The tables below demonstrate many of the common markups used to format pages.  The left column shows what to write to achieve the effect, the right column shows the effect of the markup.  More details are available from the <a class='wikilink' href='/PmWiki/TextFormattingRules'>text formatting rules</a> and other documentation pages. An exhaustive list of default markup is available as the <a class='wikilink' href='/PmWiki/MarkupMasterIndex'>markup master index</a>.
+</p>
+<div class='vspace'></div><h3><a name='Paragraphs' id='Paragraphs'></a>Paragraphs and line breaks</h3>
+<p><a name='markupheaders' id='markupheaders'></a>
+</p>
+<table class='markup horiz' align='center' ><tr><td class='markup1'  valign='top'>
+<p><span style='font-size:83%'><strong>What to type</strong></span>
+</p></td><td class='markup2'  valign='top'>
+<p><span style='font-size:83%'><strong>What it looks like</strong></span>
+</p></td></tr></table>
+<p><a name='markupheadersend' id='markupheadersend'></a>
+</p>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Consecutive lines
+will be merged together
+as part of the same paragraph.
+
+One or more empty lines will start a
+new paragraph.
+</pre></td><td 
+        class='markup2' valign='top'><p>Consecutive lines
+will be merged together
+as part of the same paragraph.
+</p>
+<p class='vspace'>One or more empty lines will start a new paragraph.
+</p>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Two backslashes at the end of a line \\
+force a line break.
+
+Or use this markup: [[&lt;&lt;]] to
+force a break.
+</pre></td><td 
+        class='markup2' valign='top'><p>Two backslashes at the end of a line <br />force a line break.
+</p>
+<p class='vspace'>Or use this markup: <br clear='all' /> to force a break.
+</p>
+</td></tr></table>
+<p>Further reading:
+</p><ul><li><a class='wikilink' href='/PmWiki/TextFormattingRules'>text formatting rules</a> for more information on linebreaks, indented or hanging paragraphs.
+</li><li><a class='wikilink' href='/PmWiki/WikiStyles'>wiki styles</a> for centered or right justified paragraphs and "floating" text (boxes), borders and much more.
+</li></ul><div class='vspace'></div><h3><a name='lists' id='lists'></a>Lists</h3>
+<p>Start each line with # for numbered (ordered) lists or * for bulleted (unordered) lists:
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>* Bullet list
+* Another item
+** More asterisks produce sub-items
+** etc.
+</pre></td><td 
+        class='markup2' valign='top'><ul><li>Bullet list
+</li><li>Another item
+<ul><li>More asterisks produce sub-items
+</li><li>etc.
+</li></ul></li></ul>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre># Numbered lists
+# Another item
+## more hashes produce sub-items
+</pre></td><td 
+        class='markup2' valign='top'><ol><li>Numbered lists
+</li><li>Another item
+<ol><li>more hashes produce sub-items
+</li></ol></li></ol>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre># List types
+# can be mixed
+** numbered list with unordered
+sub-list
+</pre></td><td 
+        class='markup2' valign='top'><ol><li>List types
+</li><li>can be mixed
+<ul><li>numbered list with unordered sub-list
+</li></ul></li></ol>
+</td></tr></table>
+<p class='vspace'>Learn more about <a class='wikilink' href='/PmWiki/TextFormattingRules#BulletedLists'>lists</a> (including <a class='wikilink' href='/PmWiki/TextFormattingRules#DefinitionLists'>definition lists</a>) and <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/list%20styles' rel='nofollow'>list styles</a>.
+</p>
+<div class='vspace'></div><h3><a name='headings' id='headings'></a> Headings</h3>
+<p>Headings are useful for creating a "well-structured" page. They're not just for making big text.
+</p>
+<p class='vspace'>
+</p>
+<table class='markup horiz' align='center' ><tr><td class='markup1'  valign='top'>
+<p><span style='font-size:83%'><strong>What to type</strong></span>
+</p></td><td class='markup2'  valign='top'>
+<p><span style='font-size:83%'><strong>What it looks like</strong></span>
+</p></td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>!! Major Subheading
+!!! Minor Subheading
+!!!! And More
+!!!!! Subheadings
+</pre></td><td 
+        class='markup2' valign='top'><h2>Major Subheading</h2>
+<h3>Minor Subheading</h3>
+<h4>And More</h4>
+<h5>Subheadings</h5>
+</td></tr></table>
+<div class='vspace'></div><h3><a name='emphasis' id='emphasis'></a> Text Emphasis</h3>
+<p>To emphasize, enclose text in apostrophes (single-quote marks), not double-quotes.
+</p>
+<p class='vspace'>
+</p>
+<table class='markup horiz' align='center' ><tr><td class='markup1'  valign='top'>
+<p><span style='font-size:83%'><strong>What to type</strong></span>
+</p></td><td class='markup2'  valign='top'>
+<p><span style='font-size:83%'><strong>What it looks like</strong></span>
+</p></td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>''Emphasize'' (italics),
+'''strong''' (bold), 
+'''''very strong''''' (bold italics).
+</pre></td><td 
+        class='markup2' valign='top'><p><em>Emphasize</em> (italics),
+<strong>strong</strong> (bold), 
+<strong><em>very strong</em></strong> (bold italics).
+</p>
+</td></tr></table>
+<div class='vspace'></div><h3><a name='links' id='links'></a> Links</h3>
+<p>To make a link to another page, enclose the page's name in double square brackets.
+</p>
+<p class='vspace'>
+</p>
+<table class='markup horiz' align='center' ><tr><td class='markup1'  valign='top'>
+<p><span style='font-size:83%'><strong>What to type</strong></span>
+</p></td><td class='markup2'  valign='top'>
+<p><span style='font-size:83%'><strong>What it looks like</strong></span>
+</p></td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Practice editing in the [[wiki sandbox]]
+</pre></td><td 
+        class='markup2' valign='top'><p>Practice editing in the <a class='wikilink' href='/PmWiki/WikiSandbox'>wiki sandbox</a>
+</p>
+</td></tr></table>
+<p>Note that words are automatically <em>capitalized</em> in page titles. The link above links to the page WikiSandbox.
+</p>
+<p class='vspace'>Text after a pipe (|) is used as the link text:
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Practice editing in the
+[[WikiSandbox | practice area]].
+</pre></td><td 
+        class='markup2' valign='top'><p>Practice editing in the
+<a class='wikilink' href='/PmWiki/WikiSandbox'>practice area</a>.
+</p>
+</td></tr></table>
+<p class='vspace'>Endings become part of the link text, parentheses hide parts of the link name:
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>[[wiki sandbox]]es.
+
+[[(wiki) sandbox]].
+</pre></td><td 
+        class='markup2' valign='top'><p><a class='wikilink' href='/PmWiki/WikiSandbox'>wiki sandboxes</a>.
+</p>
+<p class='vspace'><a class='wikilink' href='/PmWiki/WikiSandbox'> sandbox</a>.
+</p>
+</td></tr></table>
+<p class='vspace'>When linking to a page in a different <a class='wikilink' href='/PmWiki/WikiGroup'>WikiGroup</a>, provide the group name, followed by a separator, and then the page name:
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>[[Main.Wiki Sandbox]] shows group + name
+
+[[Main/Wiki Sandbox]] shows only name
+</pre></td><td 
+        class='markup2' valign='top'><p><a class='wikilink' href='/Main/WikiSandbox'>Main.Wiki Sandbox</a> shows group + name
+</p>
+<p class='vspace'><a class='wikilink' href='/Main/WikiSandbox'>Wiki Sandbox</a> shows only name
+</p>
+</td></tr></table>
+<p class='vspace'>Links to external sites
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>bare url:  http://www.pmwiki.org
+
+link text: [[http://www.pmwiki.org |
+PmWiki home]]
+</pre></td><td 
+        class='markup2' valign='top'><p>bare url:  <a class='urllink' href='http://www.pmwiki.org' rel='nofollow'>http://www.pmwiki.org</a>
+</p>
+<p class='vspace'>link text: <a class='urllink' href='http://www.pmwiki.org' rel='nofollow'>PmWiki home</a>
+</p>
+</td></tr></table>
+<p class='vspace'>Colons make <a class='wikilink' href='/PmWiki/InterMap'>InterMap</a> (also called InterWiki) links to other wikis:
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>What's an [[Wikipedia:aardvark]],
+anyway?
+</pre></td><td 
+        class='markup2' valign='top'><p>What's an <a class='urllink' href='http://www.wikipedia.com/wiki/aardvark' rel='nofollow'>Wikipedia:aardvark</a>, anyway?
+</p>
+</td></tr></table>
+<p class='vspace'>Links to <a class='createlinktext' rel='nofollow' 
+    href='/PmWiki/NonexistentPages?action=edit'>nonexistent pages</a><a rel='nofollow' 
+    class='createlink' href='/PmWiki/NonexistentPages?action=edit'>?</a> are displayed specially, to invite others to create the page.
+</p>
+<p class='vspace'>PmWiki supports more link types and a lot of display options, see <a class='wikilink' href='/PmWiki/Links'>Links</a> to learn more.
+</p>
+<div class='vspace'></div><h3>Preformatted text</h3>
+<p>Preformatted text is displayed using a monospace font and not generating linebreaks except where explicitly indicated in the markup.
+</p>
+<p class='vspace'>Note that very long lines of preformatted text can cause the whole page to be wide.
+</p>
+<p class='vspace'>For preformatted text with markup (e.g. emphasis) being processed, start each line with a space:
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre> Lines that begin with a spece
+ are formatted exactly as typed
+ in a '''fixed-width''' font.
+</pre></td><td 
+        class='markup2' valign='top'><pre> Lines that begin with a spece
+ are formatted exactly as typed
+ in a <strong>fixed-width</strong> font.
+</pre>
+</td></tr></table>
+<p class='vspace'>If you don't want Wiki markup to be processed, use [@ @]. Can also be used inline.
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>[@
+Text escaped this way has
+the HTML ''code'' style
+@]
+</pre></td><td 
+        class='markup2' valign='top'><pre class='escaped'>
+Text escaped this way has
+the HTML ''code'' style
+</pre>
+</td></tr></table>
+<div class='vspace'></div><h3>Escape sequence</h3>
+<p>If you don't want Wiki markup to be processed, but lines reformatted use <code class='escaped'>[= =]</code>. Can also be used inline.
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>[=
+markup is ''not'' processed
+but lines are reformatted
+=]
+</pre></td><td 
+        class='markup2' valign='top'><p>
+markup is ''not'' processed
+but lines are reformatted
+
+</p>
+</td></tr></table>
+<div class='vspace'></div><h3>Horizontal line</h3>
+<table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Four or more dashes at
+the beginning of a line
+----
+produce a "horizontal rule"
+</pre></td><td 
+        class='markup2' valign='top'><p>Four or more dashes at
+the beginning of a line
+</p><hr />
+<p>produce a "horizontal rule"
+</p>
+</td></tr></table>
+<div class='vspace'></div><h3>Tables</h3>
+<p>Simple tables use double pipe characters to separate cells:
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>|| border=1
+||! head 1 ||! head 2 ||! head 3 ||
+|| cell 1  ||  cell 2 ||  cell 3 ||
+</pre></td><td 
+        class='markup2' valign='top'><table border='1' ><tr ><th  align='center'>head 1</th><th  align='center'>head 2</th><th  align='center'>head 3</th></tr>
+<tr ><td  align='center'>cell 1</td><td  align='center'>cell 2</td><td  align='center'>cell 3</td></tr>
+</table>
+</td></tr></table>
+<p>See <a class='wikilink' href='/PmWiki/Tables'>simple tables</a> and <a class='wikilink' href='/PmWiki/TableDirectives'>advanced tables</a> to learn more about the rich feature set of PmWiki tables.
+</p>
+<div class='vspace'></div><h3>Images</h3>
+<p>See <a class='wikilink' href='/PmWiki/Images'>Images</a>
+</p>
+<div class='vspace'></div><h3>Character formatting</h3>
+<p>
+</p>
+<table class='markup horiz' align='center' ><tr><td class='markup1'  valign='top'>
+<p><span style='font-size:83%'><strong>What to type</strong></span>
+</p></td><td class='markup2'  valign='top'>
+<p><span style='font-size:83%'><strong>What it looks like</strong></span>
+</p></td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>* @@Monospaced text@@
+* Text with '^superscripts^'
+* Text with '_subscripts_'
+* deleted {-strikethrough-} text
+* inserted {+underline+} text
+* [+big+], [++bigger++] text
+* [-small-], [--smaller--] text
+</pre></td><td 
+        class='markup2' valign='top'><ul><li><code>Monospaced text</code>
+</li><li>Text with <sup>superscripts</sup>
+</li><li>Text with <sub>subscripts</sub>
+</li><li>deleted <del>strikethrough</del> text
+</li><li>inserted <ins>underline</ins> text
+</li><li><span style='font-size:120%'>big</span>, <span style='font-size:144%'>bigger</span> text
+</li><li><span style='font-size:83%'>small</span>, <span style='font-size:69%'>smaller</span> text
+</li></ul>
+</td></tr></table>
+<p class='vspace'>Use <a class='wikilink' href='/PmWiki/WikiStyles'>WikiStyles</a> to change <span  style='color: red;'> the </span><span  style='color: blue;'> text </span><span  style='color: green;'> </span><span  style='color: #ff7f00;'> color </span>.
+</p>
+<p class='vspace'><a name='pagetitles' id='pagetitles'></a>
+</p><h3>Page titles</h3>
+<p>The <code class='escaped'>(:title:)</code> directive sets the page's title to something other than its page name.
+</p><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>(:Title Basic PmWiki editing rules:)
+The name of this page is "{$Name}", and
+its title is "{$Title}".
+</pre></td><td 
+        class='markup2' valign='top'><p>The name of this page is "BasicEditing", and its title is "Basic PmWiki editing rules".
+</p>
+</td></tr></table>
+<p class='vspace'><a name='pagesummary' id='pagesummary'></a>
+</p><h3>Page Description</h3>
+<ul><li>The <code class='escaped'>(:Description Page summary here:)</code> directive sets the page description. The description is used by search engines, and can displayed in search results and in <a class='wikilink' href='/PmWiki/PageLists'>page lists</a>.
+</li></ul><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>(:Description PmWiki's basic edit
+syntax:)
+The summary description of this page is
+{$Description}.
+</pre></td><td 
+        class='markup2' valign='top'><p>The summary description of this page is PmWiki's basic edit syntax.
+</p>
+</td></tr></table>
+<div class='vspace'></div><div class='faq' > <a name='faq' id='faq'></a> 
+<p><a name='beginning' id='beginning'></a>
+</p><p class='question'> I'm new to PmWiki, where can I find some basic help for getting started?</p>
+<p> The <a class='selflink' href='/PmWiki/BasicEditing'>Basic Editing</a> page is a good start.  From there, you can just follow the navigational links at the top or the bottom of the page (they are called <a class='wikilink' href='/PmWiki/WikiTrails'>Wiki Trails</a>) to the next pages, or to the <a class='wikilink' href='/PmWiki/DocumentationIndex'>Documentation Index</a> page, which provides an outline style index of essential documentation pages, organized from basic to advanced.
+</p>
+<p class='vspace question'> How do I include special characters such as Copyright (&#169;) and Trademark (&#174; or &#8482;) on my wiki pages?</p>
+<p>  See <a class='wikilink' href='/PmWiki/SpecialCharacters'>special characters</a> on how to insert special characters that don't appear on your keyboard.
+</p>
+<p class='vspace question'> Why are separate lines of text in the markup combined into a single line on output?</p>
+<p> PmWiki normally treats consecutive lines of text as being a paragraph, and merges and wraps lines together on output. This is consistent with most other wiki packages. An author can use the <code class='escaped'>(:linebreaks:)</code> directive to cause separate lines of markup text to be kept as separate lines in the output. Or a wiki administrator can set in <em>config.php</em> <code>&#36;HTMLPNewline = '&lt;br/&gt;';</code> to force literal new lines for the whole site.
+</p>
+<p class='vspace question'> Can I just enter HTML directly?</p>
+<p> By default (and by design), PmWiki does not support the use of HTML elements in the editable markup for wiki pages. There are a number of reasons for this described in the <a class='wikilink' href='/PmWiki/PmWikiPhilosophy'>PmWiki Philosophy</a> and <a class='wikilink' href='/PmWiki/Audiences'>Audiences</a>. Enabling HTML markup within wiki pages in a collaborative environment may exclude some potential authors from being able to edit pages, and pose a number of display and security issues. However, a site administrator can use the <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Enable%20HTML' rel='nofollow'>Cookbook:Enable HTML</a> recipe to enable the use of HTML markup directly in pages.
+</p>
+<p class='vspace question'> Where can I find more documentation?</p>
+<p> See the <a class='wikilink' href='/PmWiki/DocumentationIndex'>documentation index</a> and the <a class='wikilink' href='/PmWiki/MarkupMasterIndex'>markup master index</a> pages.
+ 
+</p></div><div style="clear:right; float:right; font-size:smaller; background-color:#eee;" >
+<p><span class='wikitrail'>&lt; <a class='wikilink' href='/PmWiki/Introduction'>Introduction</a> | <a class='wikilink' href='/PmWiki/DocumentationIndex#trailstart#trailend'>Documentation Index</a> | <a class='wikilink' href='/PmWiki/CreatingNewPages'>Creating new pages</a> &gt;</span> 
+</p></div>
+<p><a name='trailend' id='trailend'></a>
+<br clear='all' />
+</p><div  style='background-color: #ffe; border-top: 1px solid black; font-size: .8em;' > 
+<p>This page may have <span class='commentout-pmwikiorg'> a more recent version on <a class='urllink' href='http://www.pmwiki.org' rel='nofollow'>pmwiki.org</a>: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/BasicEditing' rel='nofollow'>PmWiki:BasicEditing</a>, and </span> a talk page: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/BasicEditing-Talk' rel='nofollow'>PmWiki:BasicEditing-Talk</a>.
+</p></div>
+</div>
+
+      </td>
+    </tr></table>
+<!--PageFooterFmt-->
+  <div id='wikifoot'>
+    <div class='footinfo'></div>
+  </div>
+<!--/PageFooterFmt-->
+</body>
+</html>

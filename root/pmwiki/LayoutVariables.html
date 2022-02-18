@@ -1,0 +1,215 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>TagTrade Wiki | PmWiki / LayoutVariables browse</title>
+  <meta http-equiv="Content-type" content="text/html;charset=iso-8859-1" />
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel='stylesheet' href='/pmwiki/pub/skins/tagtrade/tagtrade.css' type='text/css' />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+
+</head>
+<body>
+<!--PageHeaderFmt-->
+  <div id='wikilogo'><a href=''><img src='/pmwiki/pub/skins/tagtrade/tagtrade-32.gif'
+    alt='TagTrade Wiki' border='0' /></a></div>
+  <div id='wikihead'>
+  </div>
+<!--/PageHeaderFmt-->
+  <table id='wikimid' width='100%' cellspacing='0' cellpadding='0'><tr>
+<!--PageLeftFmt-->
+      <td id='wikileft' valign='top'>
+        <p class='sidehead'> <a class='wikilink' href='/Main/HomePage'>Main</a>
+</p><ul><li><a class='wikilink' href='/Main/Systems'>Systems</a>
+</li><li><a class='wikilink' href='/Main/DiscussionGroups'>Discussion groups</a>
+</li><li><a class='wikilink' href='/Main/Jabber'>Jabber group chat</a>
+</li><li><a class='wikilink' href='/Main/Irc'>IRC channel</a>
+</li><li><a class='wikilink' href='/Main/Events'>Events</a>
+</li><li><a class='wikilink' href='/Main/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Main/WikiSandbox'>Wiki sandbox</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Devel/HomePage'>Devel</a>
+</p><ul><li><a class='wikilink' href='/Devel/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Devel/BackEnd'>Back end</a>
+</li><li><a class='wikilink' href='/Devel/FrontEnd'>Front end</a>
+</li><li><a class='wikilink' href='/Devel/AuthoringPages'>Authoring pages</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Profiles/HomePage'>Profiles</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/PmWiki/PmWiki'>PmWiki</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/DocArchive/HomePage'>Doc archive</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/Portal/HomePage'>Portal</a>
+</p><ul><li><a class='wikilink' href='/Portal/WikiSandbox'>Wiki sandbox</a>
+</li></ul>
+</td>
+<!--/PageLeftFmt-->
+      <td id='wikibody' valign='top'>
+<!--PageTitleFmt-->
+        <div id='wikititle'>
+          <div class='pagegroup'><a href='/PmWiki'>PmWiki</a> /</div>
+          <h1 class='pagetitle'>LayoutVariables</h1></div>
+<!--PageText-->
+<div id='wikitext'>
+<p>
+<a name='trailstart' id='trailstart'></a> 
+</p><div style="clear:right; float:right; font-size:smaller; background-color:#ddd;" >
+<p><span class='wikitrail'>&lt; <a class='wikilink' href='/PmWiki/I18nVariables'>I18n Variables</a> | <a class='wikilink' href='/PmWiki/Variables'>Variables</a> | <a class='wikilink' href='/PmWiki/LinkVariables'>Link Variables</a> &gt;</span> 
+</p></div>
+<div style="clear:right;" >
+</div>
+<p class='vspace'>Variable substitutions in the skin template are all managed by the FmtPageName() function from pmwiki.php. Pmwiki variable substitutions available on pages are managed by the  substitutions from stdmarkup.php or superseded in local/config files. 
+</p>
+<div class='vspace'></div><dl><dt><a name='ActionSkin' id='ActionSkin'></a><a class='varlink' href='/PmWiki/LayoutVariables#ActionSkin'><code class='varlink'>&#36;ActionSkin</code></a></dt><dd>This array is used to override the current skin when performing a given action. The most common use is to set <code><a class='varlink' href='/PmWiki/LayoutVariables#ActionSkin'><code class='varlink'>&#36;ActionSkin</code></a>['print']='foo'</code> to use the 'foo' skin when printing, regardless of what the <code>$Skin</code> variable is set to.
+<div class='vspace'></div></dd><dt><a name='WikiTitle' id='WikiTitle'></a><a class='varlink' href='/PmWiki/LayoutVariables#WikiTitle'><code class='varlink'>&#36;WikiTitle</code></a></dt><dd>A variable which contains the Wiki title as displayed by the browser
+<div class='vspace'></div></dd><dt><a name='HTMLStylesFmt' id='HTMLStylesFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#HTMLStylesFmt'><code class='varlink'>&#36;HTMLStylesFmt</code></a></dt><dd>An array of CSS statements to be included in the page's output along with other HTML headers.  This array provides an easy place for scripts to add custom CSS statements.
+<div class='vspace'></div></dd><dt><a name='HTMLHeaderFmt' id='HTMLHeaderFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#HTMLHeaderFmt'><code class='varlink'>&#36;HTMLHeaderFmt</code></a></dt><dd>An array of HTML text to be included in the page's &lt;head&gt; section, at the point where the <a class='wikilink' href='/PmWiki/SkinTemplates'>skin template</a> specifies a <code class='escaped'>&lt;!--HTMLHeader--&gt;</code> directive.  This array provides an easy place for scripts to add custom HTML headers.
+</dd></dl><div class='vspace'></div><div class='indent'>For example, if you want to specify a logo for all the pages of your wiki (a png image for Firefox (and others...), an ico for Internet Explorer):
+<div class='indent'><pre class='escaped'> 
+$HTMLHeaderFmt['logo'] =
+  '&lt;link href="http://path/to/logo.png" type="image/png" rel="icon" /&gt;
+  &lt;link href="http://path/to/logo.ico" type="image/x-icon" rel="shortcut icon" /&gt;';
+</pre>
+</div><div class='vspace'></div></div><div class='indent'>Another example, if you want to get the rss notification on some browsers (the rss icon in firefox for instance):
+<div class='indent'><pre class='escaped'> 
+$HTMLHeaderFmt['rss'] =
+  '&lt;link rel="alternate" type="application/rss+xml" title="Rss All recent Changes" 
+     href="$ScriptUrl/Site/AllRecentChanges?action=rss" /&gt;';
+</pre>
+</div></div><div class='vspace'></div><dl><dt><a name='HTMLFooterFmt' id='HTMLFooterFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#HTMLFooterFmt'><code class='varlink'>&#36;HTMLFooterFmt</code></a></dt><dd>Like <a class='varlink' href='/PmWiki/LayoutVariables#HTMLHeaderFmt'><code class='varlink'>&#36;HTMLHeaderFmt</code></a> above, this contains an array of HTML text to be included near the end of an HTML document, at the point where the <a class='wikilink' href='/PmWiki/SkinTemplates'>skin template</a> specifies a <code class='escaped'>&lt;!--HTMLFooter--&gt;</code> directive (usually just before a closing &lt;/body&gt; tag).  Primarily used by scripts to add custom HTML output after the body of the page output. 
+<div class='vspace'></div></dd><dt><a name='MetaRobots' id='MetaRobots'></a><a class='varlink' href='/PmWiki/LayoutVariables#MetaRobots'><code class='varlink'>&#36;MetaRobots</code></a></dt><dd>Sets the value of the <code class='escaped'>&lt;meta name='robots' ... /&gt;</code> tag generated by PmWiki to control search engine robots accessing the site.  PmWiki's default setting tells robots to not index anything but the normal page view, and to not index pages in the PmWiki <a class='wikilink' href='/PmWiki/WikiGroup'>wiki group</a>.  Explicitly setting <a class='varlink' href='/PmWiki/LayoutVariables#MetaRobots'><code class='varlink'>&#36;MetaRobots</code></a> overrides this default.
+</dd></dl><pre>        # never index this site
+        <a class='varlink' href='/PmWiki/LayoutVariables#MetaRobots'><code class='varlink'>&#36;MetaRobots</code></a> = 'noindex,nofollow';
+        # disable the robots tag entirely
+        <a class='varlink' href='/PmWiki/LayoutVariables#MetaRobots'><code class='varlink'>&#36;MetaRobots</code></a> = '';
+</pre><div class='vspace'></div><dl><dt><a name='MessagesFmt' id='MessagesFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#MessagesFmt'><code class='varlink'>&#36;MessagesFmt</code></a></dt><dd>An array of HTML text to be displayed at the point of any <code class='escaped'>(:messages:)</code> markup.  Commonly used for displaying messages with respect to editing pages.
+<div class='vspace'></div></dd><dt><a name='RecentChangesFmt' id='RecentChangesFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#RecentChangesFmt'><code class='varlink'>&#36;RecentChangesFmt</code></a></dt><dd>An array specifying the format of the RecentChanges listing.
+</dd></dl><div class='vspace'></div><div class='indent'>The format can be specified in your config.php using the following:
+<div class='indent'><pre class='escaped'>
+$RecentChangesFmt['$SiteGroup.AllRecentChanges'] = 
+  '* [[{$Group}.{$Name}]]  . . . $CurrentTime $[by] $AuthorLink: [=$ChangeSummary=]';
+$RecentChangesFmt['$Group.RecentChanges'] =
+  '* [[{$Group}/{$Name}]]  . . . $CurrentTime $[by] $AuthorLink: [=$ChangeSummary=]';
+</pre>
+</div><div class='vspace'></div></div><div class='indent'>Note that changes made to the format will only affect new edits. In other words, you will need to edit a page for your new format to be visible.  Note also that you need to have two spaces between the page name and the other information about the edit.
+<div class='vspace'></div></div><div class='indent'>Also note that this variable has other uses, such as not reporting at all to RecentChanges and AllRecentChanges as found here <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Questions' rel='nofollow'>PmWiki Questions</a>.
+</div><div class='vspace'></div><dl><dt><a name='RecentUploadsFmt' id='RecentUploadsFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#RecentUploadsFmt'><code class='varlink'>&#36;RecentUploadsFmt</code></a></dt><dd>An array specifying the format for uploaded files at the RecentChanges listing. It is similar to <a class='varlink' href='/PmWiki/LayoutVariables#RecentChangesFmt'><code class='varlink'>&#36;RecentChangesFmt</code></a>. If enabled, newly uploaded files will be logged to the RecentChanges pages. Default is disabled. See <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/RecentUploadsLog' rel='nofollow'>Cookbook:RecentUploadsLog</a> for more information.
+<div class='vspace'></div></dd><dt><a name='DraftRecentChangesFmt' id='DraftRecentChangesFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#DraftRecentChangesFmt'><code class='varlink'>&#36;DraftRecentChangesFmt</code></a></dt><dd>An array specifying the format of the RecentChanges listing when saving Draft pages.
+</dd></dl><div class='vspace'></div><div class='indent'><a class='varlink' href='/PmWiki/LayoutVariables#RecentChangesFmt'><code class='varlink'>&#36;RecentChangesFmt</code></a> is set to <a class='varlink' href='/PmWiki/LayoutVariables#DraftRecentChangesFmt'><code class='varlink'>&#36;DraftRecentChangesFmt</code></a> when a Draft page is saved.  For example, you could save drafts in a separate Recent Draft Changes page and not list in the normal group's Recent Changes page:
+<div class='indent'><pre class='escaped'>
+$DraftRecentChangesFmt['$Group.RecentDraftChanges'] =
+  '* [[{$Group}/{$Name}]]  . . . $CurrentTime $[by] $AuthorLink: [=$ChangeSummary=]';
+$DraftRecentChangesFmt['$Group.RecentChanges'] = '';
+</pre>
+</div></div><div class='vspace'></div><dl><dt><a name='RCLinesMax' id='RCLinesMax'></a><a class='varlink' href='/PmWiki/LayoutVariables#RCLinesMax'><code class='varlink'>&#36;RCLinesMax</code></a></dt><dd>The maximum number of lines to be stored in RecentChanges pages.  The default is zero, meaning "no limit".
+</dd></dl><pre>        <a class='varlink' href='/PmWiki/LayoutVariables#RCLinesMax'><code class='varlink'>&#36;RCLinesMax</code></a> = 1000;       # maintain at most 1000 recent changes
+</pre><div class='vspace'></div><dl><dt><a name='PageRedirectFmt' id='PageRedirectFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#PageRedirectFmt'><code class='varlink'>&#36;PageRedirectFmt</code></a></dt><dd>The text to be used when a page is redirected via the <code class='escaped'>(:redirect:)</code> markup.
+<div class='indent'><pre class='escaped'>
+$PageRedirectFmt = '&lt;p&gt;&lt;i&gt;redirected from $FullName&lt;/p&gt;';
+$PageRedirectFmt = '';
+</pre>
+</div></dd></dl><div class='indent'>For display options, see also the FAQ on <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/PageDirectives#faq' rel='nofollow'>PageDirectives</a>.
+</div><div class='vspace'></div><dl><dt><a name='WikiStyle' id='WikiStyle'></a><a class='varlink' href='/PmWiki/LayoutVariables#WikiStyle'><code class='varlink'>&#36;WikiStyle</code></a></dt><dd>An array which contains the predefined WikiStyles which can be used on a textpage.<br clear='all' />See: <a class='wikilink' href='/PmWiki/CustomWikiStyles'>PmWiki.CustomWikiStyles</a>
+<div class='vspace'></div></dd><dt><a name='MaxIncludes' id='MaxIncludes'></a><a class='varlink' href='/PmWiki/LayoutVariables#MaxIncludes'><code class='varlink'>&#36;MaxIncludes</code></a></dt><dd>Controls the number of times that pages can be included via the <code class='escaped'>(:include:)</code> and other directives, used to control recursion and otherwise pose a sanity check on page contents.  <a class='varlink' href='/PmWiki/LayoutVariables#MaxIncludes'><code class='varlink'>&#36;MaxIncludes</code></a> defaults to 50, but can be set to any value by the wiki administrator.
+</dd></dl><pre>        <a class='varlink' href='/PmWiki/LayoutVariables#MaxIncludes'><code class='varlink'>&#36;MaxIncludes</code></a> = 50;            # default
+        <a class='varlink' href='/PmWiki/LayoutVariables#MaxIncludes'><code class='varlink'>&#36;MaxIncludes</code></a> = 1000;          # allow lots of includes
+        <a class='varlink' href='/PmWiki/LayoutVariables#MaxIncludes'><code class='varlink'>&#36;MaxIncludes</code></a> = 0;             # turn off includes
+</pre><div class='vspace'></div><dl><dt>$Skin</dt><dd>Lists the name(s) of skins to load, unless overridden by <a class='varlink' href='/PmWiki/LayoutVariables#ActionSkin'><code class='varlink'>&#36;ActionSkin</code></a>. Normally $Skin contains a single string which is a the name of a skin directory, but it may also be an array of names, in which case the first skin found from the list is used.
+<div class='vspace'></div></dd><dt><a name='SkinDirUrl' id='SkinDirUrl'></a><a class='varlink' href='/PmWiki/PathVariables#SkinDirUrl'><code class='varlink'>&#36;SkinDirUrl</code></a></dt><dd>Set by <em>scripts/skins.php</em> to be the base url of the current skin's directory (i.e., within a 'pub/skins/' directory).  This variable is typically used inside of a skin .tmpl file to provide access to .css files and graphic images associated with the skin.
+<div class='vspace'></div></dd><dt><a name='SkinLibDirs' id='SkinLibDirs'></a><a class='varlink' href='/PmWiki/LayoutVariables#SkinLibDirs'><code class='varlink'>&#36;SkinLibDirs</code></a></dt><dd>An array which, given the filesystem path (array key) to a skin (or a directory containing several skins), provides the corresponding URL (array value).
+</dd></dl><div class='vspace'></div><div class='indent'>The array key is the directory containing the skin.tmpl and skin.php files, as seen by the PmWiki program. It does not have to be publicly accessible.
+<div class='vspace'></div></div><div class='indent'>The value is the URL (web address) of the directory containing the .css, .gif, and other files which appear in the HTML code sent by PMWiki to the browser. This directory must be publicly accessible.
+<div class='vspace'></div></div><div class='indent'>By default <a class='varlink' href='/PmWiki/LayoutVariables#SkinLibDirs'><code class='varlink'>&#36;SkinLibDirs</code></a> is set to:<br /><pre class='escaped'>
+$SkinLibDirs = array(
+  "./pub/skins/\$Skin" =&gt; "$PubDirUrl/skins/\$Skin",
+  "$FarmD/pub/skins/\$Skin" =&gt; "$FarmPubDirUrl/skins/\$Skin");
+</pre>
+<div class='vspace'></div></div><div class='indent'>Extra details: When PMWiki is searching for a skin it looks for a directory named for the skin in the array index/keys, and if it finds it then it will use the files in that directory and also the files in the matching array value url. The two sides normally point to the same publicly accessible directory, but they do not have to.
+</div><div class='vspace'></div><dl><dt><a name='PageLogoUrl' id='PageLogoUrl'></a><a class='varlink' href='/PmWiki/LayoutVariables#PageLogoUrl'><code class='varlink'>&#36;PageLogoUrl</code></a></dt><dd> is the url that refers to a logo image which most skins display somewhere in the page's header (top left usually).
+<div class='vspace'></div></dd><dt><a name='EnablePathInfo' id='EnablePathInfo'></a><a class='varlink' href='/PmWiki/LayoutVariables#EnablePathInfo'><code class='varlink'>&#36;EnablePathInfo</code></a></dt><dd>Changes the handling of the page URL. When set to <code>1</code> page URL will be <code>...wiki.php/Main/Main</code>, when set to <code>0</code> (default) it will be <code>...wiki.php?n=Main.Main</code>.
+<div class='vspace'></div></dd><dt><a name='EnableFixedUrlRedirect' id='EnableFixedUrlRedirect'></a><a class='varlink' href='/PmWiki/LayoutVariables#EnableFixedUrlRedirect'><code class='varlink'>&#36;EnableFixedUrlRedirect</code></a></dt><dd>When PmWiki is given a partial page name (e.g., just the name of a WikiGroup), it uses <a class='varlink' href='/PmWiki/LinkVariables#PagePathFmt'><code class='varlink'>&#36;PagePathFmt</code></a> in order to make a complete page name from the partial one, then issues a "redirect" to the browser to tell it to reload the page with the correct full page name.  Setting <a class='varlink' href='/PmWiki/LayoutVariables#EnableFixedUrlRedirect'><code class='varlink'>&#36;EnableFixedUrlRedirect</code></a>=0; blocks the redirect, so that PmWiki continues processing with the adjusted page name rather than issuing the redirect. 
+<div class='vspace'></div></dd><dt><a name='GroupHeaderFmt' id='GroupHeaderFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#GroupHeaderFmt'><code class='varlink'>&#36;GroupHeaderFmt</code></a></dt><dd>Defines the markup placed at the top of every page. Default value is:
+</dd></dl><pre>        <code class='escaped'>$GroupHeaderFmt = '(:include $Group.GroupHeader:)(:nl:)';</code>
+</pre><div class='vspace'></div><dl><dt><a name='GroupPrintHeaderFmt' id='GroupPrintHeaderFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#GroupPrintHeaderFmt'><code class='varlink'>&#36;GroupPrintHeaderFmt</code></a></dt><dd>Defines the markup placed at the top of every page when <code class='escaped'>action=print</code>. Default value is:
+</dd></dl><pre>        <code class='escaped'>SDV($GroupPrintHeaderFmt,'(:include $Group.GroupPrintHeader:)(:nl:)');</code>
+</pre><div class='vspace'></div><dl><dt><a name='GroupFooterFmt' id='GroupFooterFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#GroupFooterFmt'><code class='varlink'>&#36;GroupFooterFmt</code></a></dt><dd>Defines the markup placed at the bottom of every page. Default value is:
+</dd></dl><pre>        <code class='escaped'>$GroupFooterFmt = '(:include $Group.GroupFooter:)(:nl:)';</code>
+</pre><div class='vspace'></div><dl><dt><a name='GroupPrintFooterFmt' id='GroupPrintFooterFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#GroupPrintFooterFmt'><code class='varlink'>&#36;GroupPrintFooterFmt</code></a></dt><dd>Defines the markup placed at the bottom of every page when <code class='escaped'>action=print</code>. Default value is:
+</dd></dl><pre>        <code class='escaped'>SDV($GroupPrintFooterFmt,'(:nl:)(:include $Group.GroupPrintFooter:)');</code>
+</pre><div class='vspace'></div><dl><dt><a name='PageNotFoundHeaderFmt' id='PageNotFoundHeaderFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#PageNotFoundHeaderFmt'><code class='varlink'>&#36;PageNotFoundHeaderFmt</code></a></dt><dd>Specifies the HTTP header to send when attempting to browse a page that doesn't exist.  Some webserver packages (notably Microsoft's "Personal Web Server") require that this variable be changed in order to work.
+<div class='vspace'></div><div class='indent'><pre class='escaped'>
+# default
+$PageNotFoundHeaderFmt = 'HTTP/1.1 404 Not Found';
+# return all pages as found
+$PageNotFoundHeaderFmt = 'HTTP/1.1 200 Ok';
+</pre>
+</div></dd></dl><div class='vspace'></div><div class='indent'>Beware when expecting to return the content of a Group(header|footer) for an non existent page!  By default PmWiki returns 404 (because the page does not exist), despite there is some content to show.  Firefox shows the content, while Internet Explorer displays its default 404 page.  <a class='varlink' href='/PmWiki/LayoutVariables#PageNotFoundHeaderFmt'><code class='varlink'>&#36;PageNotFoundHeaderFmt</code></a> MUST be set to return 200 as described above in order to get the expected behaviour with all browsers.
+</div><div class='vspace'></div><dl><dt><a name='HTMLVSpace' id='HTMLVSpace'></a><a class='varlink' href='/PmWiki/LayoutVariables#HTMLVSpace'><code class='varlink'>&#36;HTMLVSpace</code></a></dt><dd>Setting <code class='escaped'>$HTMLVSpace = '';</code> in a local customizationfile (e.g., <code class='escaped'>local/config.php</code>) prevents insertion of spacer paragraphs (<code class='escaped'>&lt;p class='vspace'&gt;&lt;/p&gt;</code>) in generated HTML code. To limit this change to a single skin, place the <code class='escaped'>$HTMLVSpace = '';</code> statement in a skin.php file, preceded by the statement <code class='escaped'>global $HTMLVSpace;</code>.
+<div class='vspace'></div></dd><dt><a name='TableCellAttrFmt' id='TableCellAttrFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#TableCellAttrFmt'><code class='varlink'>&#36;TableCellAttrFmt</code></a></dt><dd>For <a class='wikilink' href='/PmWiki/Tables'>Tables</a>, defines the HTML attributes given to each <code>&lt;td&gt;</code> or <code>&lt;th&gt;</code> cell in the output.  Can contain references to &#36;TableCellCount which holds the horizontal column number of the current cell.
+<div class='vspace'></div></dd><dt><a name='TableRowAttrFmt' id='TableRowAttrFmt'></a><a class='varlink' href='/PmWiki/LayoutVariables#TableRowAttrFmt'><code class='varlink'>&#36;TableRowAttrFmt</code></a></dt><dd>For <a class='wikilink' href='/PmWiki/Tables'>Tables</a>, defines the HTML attributes given to each <code>&lt;tr&gt;</code> element in the output.  Can contain references to &#36;TableRowCount to give the absolute row number within the table, or &#36;TableRowIndex to provide a repeating row index from 1 to <a class='varlink' href='/PmWiki/LayoutVariables#TableRowIndexMax'><code class='varlink'>&#36;TableRowIndexMax</code></a>.
+</dd></dl><pre>        # Give each row a unique CSS class based on row number (tr1, tr2, tr3, ... )
+        <a class='varlink' href='/PmWiki/LayoutVariables#TableRowAttrFmt'><code class='varlink'>&#36;TableRowAttrFmt</code></a> = "class='tr\&#36;TableRowCount'";
+        # Give each row alternating CSS classes (ti1, ti2, ti1, ti2, ti1, ... )
+        <a class='varlink' href='/PmWiki/LayoutVariables#TableRowIndexMax'><code class='varlink'>&#36;TableRowIndexMax</code></a> = 2;
+        <a class='varlink' href='/PmWiki/LayoutVariables#TableRowAttrFmt'><code class='varlink'>&#36;TableRowAttrFmt</code></a> = "class='ti\&#36;TableRowIndex'";
+</pre><div class='vspace'></div><dl><dt><a name='TableRowIndexMax' id='TableRowIndexMax'></a><a class='varlink' href='/PmWiki/LayoutVariables#TableRowIndexMax'><code class='varlink'>&#36;TableRowIndexMax</code></a></dt><dd>The maximum value for &#36;TableRowIndex in <a class='wikilink' href='/PmWiki/Tables'>Tables</a>.
+</dd></dl><pre>        # Set rows indexes as 1, 2, 3, 1, 2, 3, 1, 2, ...
+        <a class='varlink' href='/PmWiki/LayoutVariables#TableRowIndexMax'><code class='varlink'>&#36;TableRowIndexMax</code></a> = 3;
+</pre><div class='vspace'></div><dl><dt><a class='varlink' href='/PmWiki/OtherVariables#FmtV'><code class='varlink'>&#36;FmtV</code></a>['&#36;TableCellCount']</dt><dd>PMWiki internal variable - Horizontal column number of the current cell. For use in <a class='varlink' href='/PmWiki/LayoutVariables#TableCellAttrFmt'><code class='varlink'>&#36;TableCellAttrFmt</code></a> and <a class='varlink' href='/PmWiki/LayoutVariables#TableRowAttrFmt'><code class='varlink'>&#36;TableRowAttrFmt</code></a>.  Administrators can use in <a class='varlink' href='/PmWiki/LayoutVariables#TableCellAttrFmt'><code class='varlink'>&#36;TableCellAttrFmt</code></a> and/or <a class='varlink' href='/PmWiki/LayoutVariables#TableRowAttrFmt'><code class='varlink'>&#36;TableRowAttrFmt</code></a>.
+</dd></dl><pre>        <code class='escaped'>Example: $TableCellAttrFmt = 'class=col\$TableCellCount';</code> 
+</pre><div class='vspace'></div><dl><dt><a class='varlink' href='/PmWiki/OtherVariables#FmtV'><code class='varlink'>&#36;FmtV</code></a>['&#36;TableRowCount']</dt><dd>PMWiki internal variable - Current row number.  Administrators can use in <a class='varlink' href='/PmWiki/LayoutVariables#TableCellAttrFmt'><code class='varlink'>&#36;TableCellAttrFmt</code></a> and/or <a class='varlink' href='/PmWiki/LayoutVariables#TableRowAttrFmt'><code class='varlink'>&#36;TableRowAttrFmt</code></a>.
+</dd></dl><pre>        <code class='escaped'>Example: TableRowAttrFmt = "class='row\$TableRowCount'";</code> 
+</pre><div class='vspace'></div><dl><dt><a class='varlink' href='/PmWiki/OtherVariables#FmtV'><code class='varlink'>&#36;FmtV</code></a>['&#36;TableRowIndex']</dt><dd>PMWiki internal variable - Row index number derived from <a class='varlink' href='/PmWiki/LayoutVariables#TableRowIndexMax'><code class='varlink'>&#36;TableRowIndexMax</code></a>.  (1,2,3,1,2,3,...). Administrators can use in <a class='varlink' href='/PmWiki/LayoutVariables#TableCellAttrFmt'><code class='varlink'>&#36;TableCellAttrFmt</code></a> and/or <a class='varlink' href='/PmWiki/LayoutVariables#TableRowAttrFmt'><code class='varlink'>&#36;TableRowAttrFmt</code></a>.
+</dd></dl><pre>        <code class='escaped'>Example: $TableRowAttrFmt = "class='ind\$TableRowIndex'";</code>
+</pre><p class='vspace'>See also: <a class='wikilink' href='/PmWiki/EditVariables'>Edit Variables</a>
+ 
+</p><div style="clear:right; float:right; font-size:smaller; background-color:#ddd;" >
+<p><span class='wikitrail'>&lt; <a class='wikilink' href='/PmWiki/I18nVariables'>I18n Variables</a> | <a class='wikilink' href='/PmWiki/Variables'>Variables</a> | <a class='wikilink' href='/PmWiki/LinkVariables'>Link Variables</a> &gt;</span> 
+</p></div>
+<p><a name='trailend' id='trailend'></a>
+<br clear='all' />
+</p><div  style='background-color: #ffe; border-top: 1px solid black; font-size: .8em;' > 
+<p>This page may have <span class='commentout-pmwikiorg'> a more recent version on <a class='urllink' href='http://www.pmwiki.org' rel='nofollow'>pmwiki.org</a>: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/LayoutVariables' rel='nofollow'>PmWiki:LayoutVariables</a>, and </span> a talk page: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/LayoutVariables-Talk' rel='nofollow'>PmWiki:LayoutVariables-Talk</a>.
+</p></div>
+</div>
+
+      </td>
+    </tr></table>
+<!--PageFooterFmt-->
+  <div id='wikifoot'>
+    <div class='footinfo'></div>
+  </div>
+<!--/PageFooterFmt-->
+</body>
+</html>

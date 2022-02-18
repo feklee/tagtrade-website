@@ -1,0 +1,11 @@
+
+Herausforderungen
+
+Verbesserung des Standards: Einbindung in Semantic-Web, URLs als Tags, ...
+Entwicklung von Hilfsmitteln: Portale, Plugins, Berater, Treuhänder, ...
+Bootstrapping
+
+http://www.tagtrade.org/Main/Systems
+http://www.tagtrade.org/Portal
+http://www.tagtrade.org/Devel/HomePage
+

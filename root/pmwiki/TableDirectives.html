@@ -1,0 +1,261 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>TagTrade Wiki | PmWiki / Table directives browse</title>
+  <meta http-equiv="Content-type" content="text/html;charset=iso-8859-1" />
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel='stylesheet' href='/pmwiki/pub/skins/tagtrade/tagtrade.css' type='text/css' />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+
+</head>
+<body>
+<!--PageHeaderFmt-->
+  <div id='wikilogo'><a href=''><img src='/pmwiki/pub/skins/tagtrade/tagtrade-32.gif'
+    alt='TagTrade Wiki' border='0' /></a></div>
+  <div id='wikihead'>
+  </div>
+<!--/PageHeaderFmt-->
+  <table id='wikimid' width='100%' cellspacing='0' cellpadding='0'><tr>
+<!--PageLeftFmt-->
+      <td id='wikileft' valign='top'>
+        <p class='sidehead'> <a class='wikilink' href='/Main/HomePage'>Main</a>
+</p><ul><li><a class='wikilink' href='/Main/Systems'>Systems</a>
+</li><li><a class='wikilink' href='/Main/DiscussionGroups'>Discussion groups</a>
+</li><li><a class='wikilink' href='/Main/Jabber'>Jabber group chat</a>
+</li><li><a class='wikilink' href='/Main/Irc'>IRC channel</a>
+</li><li><a class='wikilink' href='/Main/Events'>Events</a>
+</li><li><a class='wikilink' href='/Main/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Main/WikiSandbox'>Wiki sandbox</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Devel/HomePage'>Devel</a>
+</p><ul><li><a class='wikilink' href='/Devel/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Devel/BackEnd'>Back end</a>
+</li><li><a class='wikilink' href='/Devel/FrontEnd'>Front end</a>
+</li><li><a class='wikilink' href='/Devel/AuthoringPages'>Authoring pages</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Profiles/HomePage'>Profiles</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/PmWiki/PmWiki'>PmWiki</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/DocArchive/HomePage'>Doc archive</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/Portal/HomePage'>Portal</a>
+</p><ul><li><a class='wikilink' href='/Portal/WikiSandbox'>Wiki sandbox</a>
+</li></ul>
+</td>
+<!--/PageLeftFmt-->
+      <td id='wikibody' valign='top'>
+<!--PageTitleFmt-->
+        <div id='wikititle'>
+          <div class='pagegroup'><a href='/PmWiki'>PmWiki</a> /</div>
+          <h1 class='pagetitle'>Table directives</h1></div>
+<!--PageText-->
+<div id='wikitext'>
+<p>
+<a name='trailstart' id='trailstart'></a> 
+</p><div style="clear:right; float:right; font-size:smaller; background-color:#eee;" >
+<p><span class='wikitrail'>&lt; <a class='wikilink' href='/PmWiki/Tables'>Tables</a> | <a class='wikilink' href='/PmWiki/DocumentationIndex#trailstart#trailend'>Documentation Index</a> | <a class='wikilink' href='/PmWiki/WikiStyles'>Wiki styles</a> &gt;</span> 
+</p></div>
+<div style="clear:right;" ><span class='frame rfloat' style='font-size: smaller; background-color: #ffffcc;'>authors (intermediate) </span>
+</div>
+<p class='vspace'>There are four directives for table processing.  All must be at the beginning of a line to have any effect.
+</p>
+<div class='vspace'></div><h3><code class='escaped'>(:table (attr...):)</code></h3>
+<p>Generates a new HTML &lt;table&gt; tag with the attributes provided in <em>attr...</em>.
+Closes the previous table, if any.
+Valid attributes and values are:
+</p><ul><li>border <em>(a positive integer)</em>
+</li><li>bordercolor <em>(a color name or hex number; doesn't display in all browsers)</em>
+</li><li>cellspacing <em>(a positive integer indicating the space between cells)</em>
+</li><li>cellpadding <em>(a positive integer indicating the interior border of a cell)</em>
+</li><li>width <em>(a positive integer or percent)</em>
+</li><li>bgcolor <em>(a color name or hex number)</em>
+</li><li>align <em>(left, center or right)</em>
+</li><li>summary <em>(does not display; used primarily to help visually disabled people navigate)</em>
+</li></ul><div class='vspace'></div><h3><code class='escaped'>(:cell (attr...):)</code></h3>
+<p>Generates a new cell with the attributes given by <em>attr...</em>.  
+Closes the previous table cell, if any.
+In HTML, this creates a new "&lt;td attr&gt;" tag (and possibly &lt;table&gt;, &lt;tr&gt;, and &lt;/td&gt; tags if they are needed to produce a valid HTML table). 
+</p>
+<div class='vspace'></div><div class='indent'><span  style='font-style: italic; color: green;'> <strong>Note:</strong> Placing a space after the cell markup "(:cell:) " causes subsequent text on that line to be treated as preformatted text.</span>
+</div><p class='vspace'>Valid attributes and values are:
+</p><ul><li>align <em>(left, center or right)</em>
+</li><li>valign <em>(top, middle or bottom)</em> * <em>see valign attribute info below</em>
+</li><li>colspan <em>(a positive integer)</em>
+</li><li>rowspan <em>(a positive integer)</em>
+</li><li>bgcolor <em>(a color name or hex number)</em>
+</li><li>width <em>(a positive integer or percent)</em>
+</li></ul><div class='vspace'></div><h3><code class='escaped'>(:cellnr (attr..):)</code></h3>
+<p>Generates a new cell at the beginning of the next row.
+Closes the previous table cell, if any.
+In HTML, this creates a "&lt;tr&gt;&lt;td attr&gt;" tag, and possibly &lt;table&gt;, &lt;/td&gt;, and &lt;/tr&gt; tags if they are needed for valid HTML.
+Valid attributes and values are:
+</p><ul><li>align <em>(left, center or right)</em>
+</li><li>valign <em>(top, middle or bottom)</em> * <em>see valign attribute info below</em>
+</li><li>colspan <em>(a positive integer)</em>
+</li><li>rowspan <em>(a positive integer)</em>
+</li><li>bgcolor <em>(a color name or hex number)</em>
+</li><li>width <em>(a positive integer or percent)</em>
+</li></ul><div class='vspace'></div><h3><code class='escaped'>(:tableend:)</code></h3>
+<p>Closes the previous table cell and closes off any table.  Generates &lt;/td&gt;, &lt;/tr&gt;, and &lt;/table&gt; tags as needed.
+</p>
+<div class='vspace'></div><h3>* valign attribute info</h3>
+<p>If not already set, PMWiki will automatically include the attribute valign='top' with all <code class='escaped'>(:cell:)</code> and <code class='escaped'>(:cellnr:)</code>.  PM said "Table Directives were created for layout purposes and in that case it makes the most sense for each cell (column) to have its content at the top of the row.  The attribute is placed in each cell and not in the row because certain browsers didn't recognize valign='top' in the row tag.
+</p>
+<div class='vspace'></div><h2>Notes</h2>
+<p>For the table, cell, and cellnr tags the author can specify any attributes that would be valid in the HTML &lt;table&gt; or &lt;td&gt; tags.  Thus you can specify rowspan, colspan, etc. arguments to build arbitrary tables.  However, it's not possible to nest a <code class='escaped'>(:table:)</code> inside of a <code class='escaped'>(:cell:)</code> or <code class='escaped'>(:cellnr:)</code> -- the next paragraph explains why.
+</p>
+<p class='vspace'>Many are likely to ask why we didn't just use the standard HTML table markup (&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;) instead of creating a new markup, and allowing nested tables as a result.  There are two answers:  first, the HTML table markup is very ugly for naive authors (see <a class='wikilink' href='/PmWiki/Audiences'>PmWiki.Audiences</a> and <a class='wikilink' href='/PmWiki/PmWikiPhilosophy'>PmWikiPhilosophy</a> #2), and second, it'd be very easy for authors to create tables that are incorrect HTML and that display incorrectly (or not at all) on some browsers.  Even seasoned web professionals sometimes get the table markup wrong, so it's a bit unrealistic to expect the average author to always get it right, or to be able to read arbitrary HTML table markup that someone else has created.
+</p>
+<div class='vspace'></div><div class='indent'><span  style='color: green;'> <em>Common comment:</em> Surely, the average or naive author would not be writing HTML directly, but using a tool, such as FrontPage, or even MSWord, to generate the HTML. This would be a lot simpler than learning even the simplest PmWiki markups.</span>
+</div>
+<div class='vspace'></div><div class='indent'><span  style='color: green;'> <em>Pm's Response:</em> And once the HTML has been generated and posted, how is someone else going to edit or modify the table if they don't have the original FrontPage or MSWord file used to create it?  Remember that we're talking about <em>collaborative</em> authoring.  The HTML that those packages generate is among the hardest to read and edit of all!</span>
+</div><p class='vspace'>It's difficult to write the code needed to make PmWiki understand and fix arbitrary table markup, so PmWiki uses the simplified version above.  Still, this version is able to handle most table requirements (with the possible exception of nested tables).
+</p>
+<p class='vspace'>And, this is not to say that nested HTML tables are impossible in PmWiki --they just can't be easily created by wiki authors using the default wiki markup.  A site administrator can of course create header/footer HTML code and other <a class='wikilink' href='/PmWiki/LocalCustomizations'>local customizations</a> that make use of nested tables.
+</p>
+<div class='vspace'></div><h3>Example 1.  A table using table directive markup.</h3>
+<p>"<code class='escaped'>&amp;nbsp;</code>" is a non-breaking space in html. Place it in a cell if a cell is to be empty or the border of the cell will not be drawn properly.
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>(:table border=1 cellpadding=5 cellspacing=0:)
+(:cell:) a1
+(:cell:) b1
+(:cell:) c1
+(:cell:) d1
+(:cellnr:) a2
+(:cell:) b2
+(:cell:) c2
+(:cell:) &amp;nbsp;
+(:tableend:)
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><table border='1' cellpadding='5' cellspacing='0' ><tr><td  valign='top'> a1
+</td><td  valign='top'> b1
+</td><td  valign='top'> c1
+</td><td  valign='top'> d1
+</td></tr><tr><td  valign='top'> a2
+</td><td  valign='top'> b2
+</td><td  valign='top'> c2
+</td><td  valign='top'> &nbsp;
+</td></tr></table>
+</td></tr></table>
+<p class='vspace'>In HTML, this is the same as
+</p>
+<div class='vspace'></div><div class='indent'><pre class='escaped'>
+&lt;table border='1' cellpadding='5' cellspacing='0'&gt;
+  &lt;tr&gt;
+    &lt;td&gt;a1&lt;/td&gt;
+    &lt;td&gt;b1&lt;/td&gt;
+    &lt;td&gt;c1&lt;/td&gt;
+    &lt;td&gt;d1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;a2&lt;/td&gt;
+    &lt;td&gt;b2&lt;/td&gt;
+    &lt;td&gt;c2&lt;/td&gt;
+    &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+</div><div class='vspace'></div><hr />
+<h3>Floating Table with bulleted navigation list</h3>
+<p>What if you wanted to create a nice little table like a table of contents in a page like this? In this example, the table is floating right and contains some links in a bulleted list. This is a nice demonstration of how it's possible to build a little table of contents in the page, which might navigate to other pages just within the same wiki group. Note that having a bulleted list <em>won't work in a ordinary table</em> - it only works inside an  table created with table directives such as the example code used here.
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>(:table border=1 width=30% align=right bgcolor=#cccc99 cellspacing=0 :)
+(:cellnr:)
+'''Navigation Links'''
+(:cellnr:)
+*[[Tables]]
+*[[Table directives]]
+(:tableend:)
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><table border='1' width='30%' align='right' bgcolor='#cccc99' cellspacing='0' ><tr><td  valign='top'>
+<p><strong>Navigation Links</strong>
+</p></td></tr><tr><td  valign='top'>
+<ul><li><a class='wikilink' href='/PmWiki/Tables'>Tables</a>
+</li><li><a class='selflink' href='/PmWiki/TableDirectives'>Table directives</a>
+</li></ul></td></tr></table>
+</td></tr></table>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>(:table border=1 width=30% align=right bgcolor=#cccc99 cellspacing=0 :)
+(:cellnr colspan=2 align=center:)
+'''Navigation Links'''
+(:cellnr align=center:)
+[[Tables]]
+(:cell align=center:)
+[[Table directives]]
+(:tableend:)
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><table border='1' width='30%' align='right' bgcolor='#cccc99' cellspacing='0' ><tr><td colspan='2' align='center'  valign='top'>
+<p><strong>Navigation Links</strong>
+</p></td></tr><tr><td align='center'  valign='top'>
+<p><a class='wikilink' href='/PmWiki/Tables'>Tables</a>
+</p></td><td align='center'  valign='top'>
+<p><a class='selflink' href='/PmWiki/TableDirectives'>Table directives</a>
+</p></td></tr></table>
+</td></tr></table>
+<p class='vspace'>Looking at the markup here, notice that we have used a #cccc99 hex color for the table background. Also, the <code class='escaped'>(:cellnr:)</code> markup creates a new row, a new cell and closes the row at the end.
+</p>
+<p class='vspace'>You could take this concept a little further: since you might want each page in the group to contain the same table of contents, you can make ONE table like the above and put it in its own page.  Then use an <a class='wikilink' href='/PmWiki/IncludeOtherPages'>include </a> on any of your pages and bring in the table. The float (align) property will be honored in each page where it's included.
+</p>
+<div class='vspace'></div><div class='faq' > <a name='faq' id='faq'></a> 
+<p class='vspace question'> Can I define table headers using the table directive markup?</p>
+<p> No, but you can with <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/AdvancedTableDirectives' rel='nofollow'>Cookbook:AdvancedTableDirectives</a>. See <a class='urllink' href='http://www.pmwiki.org/PITS/00535#pmanswer' rel='nofollow'>Pm's reply</a> to pending <a class='urllink' href='http://www.pmwiki.org/PITS/00535' rel='nofollow'>PITS:00535</a>
+</p>
+<p class='vspace question'> Is it possible to do nested tables?</p>
+<p> Yes, if you nest simple tables inside advanced tables. See also <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/AdvancedTableDirectives' rel='nofollow'>Cookbook:AdvancedTableDirectives</a>.
+</p>
+<p class='vspace question'> Is it possible to add background images to tables and table cells?</p>
+<p> Yes, see <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/BackgroundImages' rel='nofollow'>Cookbook:BackgroundImages</a>.
+ 
+</p></div><div style="clear:right; float:right; font-size:smaller; background-color:#eee;" >
+<p><span class='wikitrail'>&lt; <a class='wikilink' href='/PmWiki/Tables'>Tables</a> | <a class='wikilink' href='/PmWiki/DocumentationIndex#trailstart#trailend'>Documentation Index</a> | <a class='wikilink' href='/PmWiki/WikiStyles'>Wiki styles</a> &gt;</span> 
+</p></div>
+<p><a name='trailend' id='trailend'></a>
+<br clear='all' />
+</p><div  style='background-color: #ffe; border-top: 1px solid black; font-size: .8em;' > 
+<p>This page may have <span class='commentout-pmwikiorg'> a more recent version on <a class='urllink' href='http://www.pmwiki.org' rel='nofollow'>pmwiki.org</a>: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/TableDirectives' rel='nofollow'>PmWiki:TableDirectives</a>, and </span> a talk page: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/TableDirectives-Talk' rel='nofollow'>PmWiki:TableDirectives-Talk</a>.
+</p></div>
+</div>
+
+      </td>
+    </tr></table>
+<!--PageFooterFmt-->
+  <div id='wikifoot'>
+    <div class='footinfo'></div>
+  </div>
+<!--/PageFooterFmt-->
+</body>
+</html>

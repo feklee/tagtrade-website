@@ -1,0 +1,15 @@
+
+Bsp. 2/6: B unterstützt Spez.
+
+    +------------+
+    | Beschreib. |
+    | paym-tag   | -> Öffentlichkeit
+    | PGP-sig    |
+    +------------+
+
+<this-X-trade:paym:
+ from=userB@a.com;date=2006-10-23;time=08-45-17:
+ task_from=userA@a.com;task_date=2006-10-23;
+ task_time=08-39-08;
+ mini=5;maxi=10;curr=EUR:
+ a.0.1>

@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><HTML>
+	<HEAD>
+		<TITLE>/misc/Main/BarCampZurich1/talk.mgp</TITLE>
+	<HEAD>
+	<BODY>
+%% This file is compatible with MagicPoint 1.11b<BR>
+%% <BR>
+%% Felix E. Klee &lt;felix.klee@inka.de&gt;<BR>
+%%<BR>
+%deffont "standard" xfont "Bitstream Vera Sans" "iso8859-1"<BR>
+%deffont "standard_b" xfont "Bitstream Vera Sans:style=Bold" "iso8859-1"<BR>
+%deffont "footnote" xfont "Bitstream Vera Sans" "iso8859-1", size 4<BR>
+%deffont "typewriter" xfont "Courier 10 Pitch" "iso8859-1"<BR>
+%deffont "typewriter_b" xfont "Courier 10 Pitch:style=Bold" "iso8859-1"<BR>
+%deffont "diagram" xfont "Courier 10 Pitch" "iso8859-1", size 4, vgap 0, hgap 0<BR>
+%deffont "tag" xfont "Courier 10 Pitch" "iso8859-1", size 5, vgap 0, hgap 0<BR>
+%deffont "tag_s" xfont "Courier 10 Pitch" "iso8859-1", size 4, vgap 0, hgap 0<BR>
+%deffont "chapter" xfont "Bitstream Vera Sans" "iso8859-1", size 8, center, fore "white", vgap 150<BR>
+%deffont "chapter_sub" xfont "Bitstream Vera Sans" "iso8859-1", size 4, center, fore "white", vgap 50<BR>
+%% Further good fonts: Bitstream Vera Sans, Bitstream Charter<BR>
+%% <BR>
+%% Presettings for lines and indented lines:<BR>
+%default 1 area 90 90, leftfill, size 2, fore "white", back "black"<BR>
+%default 1 font "standard_b"<BR>
+%%default 1 bgrad 0 0 256 0 0 "blue" "black"<BR>
+%default 2 size 7, vgap 10, prefix " "<BR>
+%default 3 size 2, bar "gray70", vgap 10<BR>
+%default 4 size 5, fore "white", vgap 30, prefix " ", font "standard"<BR>
+%tab 1 size 5, vgap 40, prefix "  ", icon box "gray40" 50<BR>
+%tab 2 size 4, vgap 40, prefix "      ", icon arc "gray40" 50<BR>
+%tab 3 size 3, vgap 40, prefix "            ", icon delta3 "gray40" 40<BR>
+%tab n1 size 5, vgap 40, prefix "  1. ", font "standard", fore "gray40"<BR>
+%tab n2 size 5, vgap 40, prefix "  2. ", font "standard", fore "gray40"<BR>
+%tab n3 size 5, vgap 40, prefix "  3. ", font "standard", fore "gray40"<BR>
+%tab n4 size 5, vgap 40, prefix "  4. ", font "standard", fore "gray40"<BR>
+%tab n5 size 5, vgap 40, prefix "  5. ", font "standard", fore "gray40"<BR>
+%tab n6 size 5, vgap 40, prefix "  6. ", font "standard", fore "gray40"<BR>
+%tab n7 size 5, vgap 40, prefix "  7. ", font "standard", fore "gray40"<BR>
+%tab n8 size 5, vgap 40, prefix "  8. ", font "standard", fore "gray40"<BR>
+%tab n9 size 5, vgap 40, prefix "  9. ", font "standard", fore "gray40"<BR>
+%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+%page<BR>
+%center<BR>
+%nodefault, font "standard_b", size 10, vgap 150, fore "white"<BR>
+<BR>
+%vgap 0<BR>
+Tag Trade<BR>
+%nodefault, font "standard", size 7, vgap 150, fore "white"<BR>
+Application: Paid Learning<BR>
+%vgap 20<BR>
+<BR>
+%nodefault, font "standard", size 4<BR>
+Felix Klee &lt;felix.klee@inka.de&gt;<BR>
+%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+%page<BR>
+<BR>
+Overview<BR>
+<BR>
+	What's it about<BR>
+	What's there<BR>
+	Disadvantages<BR>
+	Goals<BR>
+	Proposal<BR>
+	Examples<BR>
+	Challenges<BR>
+	Paid Learning<BR>
+%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+%page<BR>
+<BR>
+What's it about<BR>
+<BR>
+Financing of small tasks<BR>
+	Example Free Software:<BR>
+		Development of extensions<BR>
+		Remote administration<BR>
+		Creation of graphics<BR>
+		...<BR>
+	Small payments<BR>
+%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+%page<BR>
+<BR>
+What's there<BR>
+<BR>
+	Donations<BR>
+	Ad hoc payments<BR>
+	Affero<BR>
+	Google Answers<BR>
+	OpenBuild.net<BR>
+	Fundable.org<BR>
+	Bounty County<BR>
+	Rent a Coder<BR>
+	...<BR>
+<BR>
+%font "footnote"<BR>
+<A HREF="http://www.tagtrade.org/Main/OtherSystems">http://www.tagtrade.org/Main/OtherSystems</A>%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+%page<BR>
+<BR>
+Disadvantages<BR>
+ <BR>
+	Donations, Affero: No trade<BR>
+	Ad hoc payments: Cumbersome, expensive, trust<BR>
+	Rent a Coder: Expensive, no small tasks<BR>
+	Google Answers, OpenBuild.org, Fundable.org, Bounty County, Rent a Coder: Central<BR>
+<BR>
+Central: Persistence, interoperability, censorship, quickness, price<BR>
+%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+%page<BR>
+<BR>
+Goals<BR>
+<BR>
+	Simplicity<BR>
+	Quickness<BR>
+	Good pay<BR>
+	Trust<BR>
+	Independence<BR>
+<BR>
+%font "footnote"<BR>
+<A HREF="http://www.tagtrade.org/Main/Goals">http://www.tagtrade.org/Main/Goals</A>%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+%page<BR>
+<BR>
+Proposal: Tag public messages!<BR>
+<BR>
+Public messages:<BR>
+	Mailing list postings<BR>
+	Posts in bug databases<BR>
+	Messages in blogs<BR>
+	...<BR>
+Tags:<BR>
+	Identify tasks, payments, ratings, ...<BR>
+	Establish relations.<BR>
+	Are easy to identify.<BR>
+	Are machine readable.<BR>
+<BR>
+%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+%page<BR>
+<BR>
+Sample tag trade process<BR>
+<BR>
+Paritipants: 2 users (A, B) + 1 developer (D)<BR>
+%font "standard_b"<BR>
+Messages sent (e.g. to a mailing list):<BR>
+%font "standard"<BR>
+&amp;n1<BR>
+%cont, fore "white"<BR>
+A: Specification<BR>
+%cont, font "tag"<BR>
+ [task] [paym]<BR>
+&amp;n2<BR>
+%cont, fore "white"<BR>
+B: Financial support intention<BR>
+%cont, font "tag"<BR>
+ [paym]<BR>
+&amp;n3<BR>
+%cont, fore "white"<BR>
+D: Start declaration<BR>
+%cont, font "tag"<BR>
+ [strt]<BR>
+&amp;n4<BR>
+%cont, fore "white"<BR>
+D: Solution<BR>
+%cont, font "tag"<BR>
+ [done]<BR>
+%font "standard"<BR>
+ (A pays D using Paypal)<BR>
+ (B pays D using bank transfer)<BR>
+&amp;n5<BR>
+%cont, fore "white"<BR>
+A: Rating for D<BR>
+%cont, font "tag"<BR>
+ [rate]<BR>
+&amp;n6<BR>
+%cont, fore "white"<BR>
+B: Rating for D<BR>
+%cont, font "tag"<BR>
+ [rate]<BR>
+&amp;n7<BR>
+%cont, fore "white"<BR>
+D: Rating A and B<BR>
+%cont, font "tag"<BR>
+ [rate] [rate]<BR>
+%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+%page<BR>
+<BR>
+Tag with embedded code<BR>
+<BR>
+%font "tag_s"<BR>
+&lt;this-X-trade:paym:<BR>
+ from=userB@a.com;date=2006-10-23;time=08-45-17:<BR>
+ task_from=userA@a.com;task_date=2006-10-23;<BR>
+ task_time=08-39-08;<BR>
+ mini=5;maxi=10;curr=EUR:<BR>
+ a.0.1&gt;<BR>
+%font "standard", size 5<BR>
+Features:<BR>
+	Rather long (compression possible)<BR>
+	Human readable (if uncompressed)<BR>
+	Only basic info (if uncompressed)<BR>
+	No additional resources needed<BR>
+	...<BR>
+<BR>
+%font "footnote"<BR>
+<A HREF="http://www.tagtrade.org/Portal/URNXTradeA-0-1">http://www.tagtrade.org/Portal/URNXTradeA-0-1</A>%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+%page<BR>
+<BR>
+Tag with remote code<BR>
+<BR>
+%font "tag_s"<BR>
+&lt;trade-url:<A HREF="http://tags.some-portal.invalid/6k4s43h1>">http://tags.some-portal.invalid/6k4s43h1></A>%font "standard", size 5<BR>
+Features:<BR>
+	Details machine readable<BR>
+	Short<BR>
+	Web space needed<BR>
+	...<BR>
+<BR>
+%font "footnote"<BR>
+<A HREF="http://tagtrade.localhost/Main/Specs">http://tagtrade.localhost/Main/Specs</A>%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+<BR>
+%page<BR>
+<BR>
+Challenges<BR>
+<BR>
+	Good tag standard<BR>
+	Helpers: Portals, plugins, consultants, escrow services, insurances, ...<BR>
+	Bootstrapping<BR>
+<BR>
+%font "footnote"<BR>
+<A HREF="http://www.tagtrade.org/Main/Systems">http://www.tagtrade.org/Main/Systems</A><A HREF="http://www.tagtrade.org/Portal">http://www.tagtrade.org/Portal</A><A HREF="http://www.tagtrade.org/Devel/HomePage">http://www.tagtrade.org/Devel/HomePage</A>%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+<BR>
+%page<BR>
+<BR>
+Application: Paid Learning<BR>
+<BR>
+	Artificial limitation of trade partners:<BR>
+		by age<BR>
+		by region<BR>
+		...<BR>
+	Encourage certification<BR>
+	Generosity needed<BR>
+	Tutors needed<BR>
+<BR>
+%font "footnote"<BR>
+<A HREF="http://tagtrade.localhost/Main/Applications">http://tagtrade.localhost/Main/Applications</A>%%<BR>
+%% ----------------------------------------------------------------------------<BR>
+%%<BR>
+<BR>
+%page<BR>
+<BR>
+End<BR>
+<BR>
+	Remarks, critique, interest?<BR>
+	More: <A HREF="http://www.tagtrade.org/">http://www.tagtrade.org/</A><BR>
+%%<BR>
+%% For EMACS:<BR>
+%% Local Variables:<BR>
+%% coding: iso-8859-1<BR>
+%% mode:flyspell<BR>
+%% mode:auto-fill<BR>
+%% fill-column:79<BR>
+%% End:<BR>
+%% Local IspellDict: american<BR>
+
+	</BODY>
+</HTML>

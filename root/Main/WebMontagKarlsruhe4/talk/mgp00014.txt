@@ -1,0 +1,16 @@
+
+Bsp. 6/6: Bewertung A, B <-> E
+
+    +-----------+
+    | Kommentar |
+    | rate-tag  | -> Öffentlichkeit
+    | PGP-sig   |
+    +-----------+
+
+<this-X-trade:strt:
+ from=userA@a.com;date=2006-10-23;time=09-10-43:
+ task_from=userA@a.com;task_date=2006-10-23;
+ task_time=08-39-08;
+ ptnr=devel@x.net;rate=0.7:
+ a.0.1>
+

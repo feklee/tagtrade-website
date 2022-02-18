@@ -1,0 +1,11 @@
+
+Beispiel - Zusammenfassung
+
+Anwender A erstellt Spezifikation
+Anwender B unterstützt Spezifikation
+Entwickler E startet
+E ist fertig
+A, B zahlen E
+Bewertung
+
+http://www.tagtrade.org/Portal/URNXTradeA-0-1

@@ -1,0 +1,14 @@
+
+Bsp. 4/6: Entwickler fertig
+
+    +----------+
+    | Lösung   |
+    | done-tag | -> Öffentlichkeit
+    | PGP-sig  |
+    +----------+
+
+<this-X-trade:done:
+ from=devel@x.net;date=2006-10-23;time=08-55-17:
+ task_from=userA@a.com;task_date=2006-10-23;
+ task_time=08-39-08:
+ a.0.1>

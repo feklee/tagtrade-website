@@ -1,0 +1,13 @@
+
+Nachteile
+ 
+Spenden: Kein Handel
+Ad-hoc-Zahlungen: Umständl., teuer, Vertr.-Probl.
+Google Answers: Zentral
+Affero: Kein Handel, (Zentral)
+OpenBuild.org: Zentral
+Fundable.org: Zentral
+Bounty County: Zentral
+Rent a Coder: Zentral, Teuer, keine kleinen Aufg.
+
+Zentral: Beständigkeit?, Interoperabilät?, Zensur

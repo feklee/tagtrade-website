@@ -1,0 +1,165 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>TagTrade Wiki | Main / Specifications browse</title>
+  <meta http-equiv="Content-type" content="text/html;charset=iso-8859-1" />
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel='stylesheet' href='/pmwiki/pub/skins/tagtrade/tagtrade.css' type='text/css' />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='index,follow' />
+
+</head>
+<body>
+<!--PageHeaderFmt-->
+  <div id='wikilogo'><a href=''><img src='/pmwiki/pub/skins/tagtrade/tagtrade-32.gif'
+    alt='TagTrade Wiki' border='0' /></a></div>
+  <div id='wikihead'>
+  </div>
+<!--/PageHeaderFmt-->
+  <table id='wikimid' width='100%' cellspacing='0' cellpadding='0'><tr>
+<!--PageLeftFmt-->
+      <td id='wikileft' valign='top'>
+        <p class='sidehead'> <a class='wikilink' href='/Main/HomePage'>Main</a>
+</p><ul><li><a class='wikilink' href='/Main/Systems'>Systems</a>
+</li><li><a class='wikilink' href='/Main/DiscussionGroups'>Discussion groups</a>
+</li><li><a class='wikilink' href='/Main/Jabber'>Jabber group chat</a>
+</li><li><a class='wikilink' href='/Main/Irc'>IRC channel</a>
+</li><li><a class='wikilink' href='/Main/Events'>Events</a>
+</li><li><a class='wikilink' href='/Main/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Main/WikiSandbox'>Wiki sandbox</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Devel/HomePage'>Devel</a>
+</p><ul><li><a class='wikilink' href='/Devel/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Devel/BackEnd'>Back end</a>
+</li><li><a class='wikilink' href='/Devel/FrontEnd'>Front end</a>
+</li><li><a class='wikilink' href='/Devel/AuthoringPages'>Authoring pages</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Profiles/HomePage'>Profiles</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/PmWiki/PmWiki'>PmWiki</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/DocArchive/HomePage'>Doc archive</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/Portal/HomePage'>Portal</a>
+</p><ul><li><a class='wikilink' href='/Portal/WikiSandbox'>Wiki sandbox</a>
+</li></ul>
+</td>
+<!--/PageLeftFmt-->
+      <td id='wikibody' valign='top'>
+<!--PageTitleFmt-->
+        <div id='wikititle'>
+          <div class='pagegroup'><a href='/Main'>Main</a> /</div>
+          <h1 class='pagetitle'>Specifications</h1></div>
+<!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>This page is about specifications for tags to be used for tag based trading.  At the moment the only specification discussed here is the proposal for the URN namespace "trade".  Feel free to add your own proposals, either for the structure of that namespace or for something different.  Also, don't hesitate to add already existing specifications or links to specifications concerning tag based trade.
+</p>
+<div class='vspace'></div><h2>The URN namespace "trade"</h2>
+<p>What follows are proposals for specifying a <a class='urllink' href='http://en.wikipedia.org/wiki/Uniform_Resource_Name' rel='nofollow'>URN</a> namespace with the identifier "trade".  As long as this namespace is not formalized, URNs with the namespace identifier "trade" should never be used.  Instead, the name space identifier "X-trade" should be used: It marks the namespace as experimenal (cf. <a class='urllink' href='ftp://ftp.rfc-editor.org/in-notes/rfc3406.txt' rel='nofollow'>RFC3406</a>).  If you add a new proposal for a specification, please make sure that your experimental URNs don't clash with other experimental URNs.  We recommend that you do this by making your URNs have the following format:
+</p>
+<div class='vspace'></div><div class='indent'>X-trade:$anything:$branch.$branch_version
+</div><p class='vspace'>with:
+</p>
+<div class='vspace'></div><div class='indent'>$anything: That string is entirely up to your specification.
+<div class='vspace'></div></div><div class='indent'>$branch: This string is the name of your branch.  It must match the regular expression "<code>[a-zA-Z][a-zA-Z0-9]*</code>".
+<div class='vspace'></div></div><div class='indent'>$branch_version: This string is the version of the document within the branch.  It may contain any characters available for use in a URN, except the character ":".
+</div><p class='vspace'>When comparing branches and versions, case <em>is</em> relevant.  The string "$branch.$branch_version" is called the <em>version</em> of the specification.
+</p>
+<div class='vspace'></div><h3>Branch <em>a</em></h3>
+<ul><li><a class='wikilink' href='/Main/URNXTradeA-0-1'>Version <em>a.0.1</em></a>
+</li><li><a class='wikilink' href='/Main/URNXTradeA-d'>Version <em>a.d</em></a> (development version, in flux)
+</li><li><a class='wikilink' href='/Main/URNXTradeADiscussion'>Discussion</a>
+</li></ul><div class='vspace'></div><h2>The ontology tagtrade.org/Ontology/trade.owl</h2>
+<ul><li><a class='wikilink' href='/Main/OntologyTradeDiscussion'>Discussion</a>
+</li></ul><div class='vspace'></div><h2>Ideas for specifications</h2>
+<p>Some random ideas concerning specifications:
+</p>
+<div class='vspace'></div><ul><li>Microformats look like an interesting possibility for making up tag trade related content
+in HTML.  One of the advantages is that they're easy to integrate into HTML and that they
+can be created and combined at will, which makes them evolve evolutionary.  For content not 
+in HTML one has several options:
+<div class='vspace'></div><ul><li>Include a URL that points to a marked up HTML document.
+<div class='vspace'></div></li><li>Attach marked up HTML content, for example in an email.
+<div class='vspace'></div></li><li>Specify extensions to the non-HTML format in way that they can be mapped to Microformats.
+</li></ul><div class='vspace'></div>Various questions currently without an answer in this wiki:
+<div class='vspace'></div><ul><li>What Microformats are available that could be helpful?
+<div class='vspace'></div></li><li>How can one somehow sign information encoded in Microformats, and how can one easily
+verify signatures?
+</li></ul><div class='vspace'></div></li><li>One may agree on a standard for tagging messages with a simple static specifier, e.g. a
+short string "T$T" (short for Tag Trade) in the subject of an email.  Users may look for 
+these strings and then find more information behind a more sophisticated additional tag.
+<div class='vspace'></div></li><li>Instead of adding URN tags to messages, one could add <em>URL tags</em>:
+<div class='vspace'></div><ul><li>By associating messages with URLs, one doesn't need to go through the procedure of applying for a formal URN namespace.  Instead, a domain name serves as a name space identifier, and a domain name is very easy to register. OTOH, a formally registered URN name space may raise inititial acceptance, precisely why it has gone through an application process during which it was peer reviewed by experts.  Another advantage of a URN based solution is that once a specification has been formalized, it is there <em>forever</em>, and people may use it even if the organization that originally created the specification breaks apart.
+<div class='vspace'></div></li><li>A URL based system could work as follows:
+<div class='vspace'></div><ol><li>A user writes creates a message, in whatever format he desires, for example in the markup used in phpBB fora.
+<div class='vspace'></div></li><li>The user copies the message into a form, say at tagtrade.org.  Using this form, he also specifies certain metadata such as how much he intends to pay for the task, and what is the tasks tag trade URL.  The user also has the possibility to generate a has code from the message plus the meta data.  This has code he can then PGP sign using a tool running on his computer.
+<div class='vspace'></div></li><li>Once he clicked submit, a short URL tag is created, e.g. &lt;url:http://tagtrade.org/tag/dfe324&gt;.
+<div class='vspace'></div></li><li>The user inserts the tag somewhere into his message and submits it to a forum.
+<div class='vspace'></div></li><li>When someone loads the page behind the URL, then he is provided with information concerning the trade message.  Furthermore, serving that page makes the server at tagtrade.org assume that the message has likely made its way into the public.  As long as the page has not been requested, the message is assumed to have been discarded and it won't appear in the database at TagTrade.org.
+</li></ol></li></ul><div class='vspace'></div><div class='indent'>The advantage of this method is that it seems to be easy to understand and also to be quite user friendly.  Also, the Internet doesn't need to be crawled by tag trade database backends in order to find messages.  The disadvantage is that the data is stored centrally, which may be problematic if the organization behind the storage space becomes disrupted.  
+<div class='vspace'></div></div><div class='indent'>As a compromise avoiding centralized, perhaps one should get rid of the idea of having a centralized domain based name space: Instead people just put meta information anywhere they like, e.g. on their own home page.  Optionally they may put links to this information on web sites functioninig as hubs.  To make it easy to identify tag trade related information, one may mark up URLs e.g. as follows: &lt;tagtrade-URL:http://my-web-site/tt/asf24&gt;.
+</div><div class='vspace'></div><ul><li>In fact, a URL based system could be integrated with a URN
+</li></ul><div class='vspace'></div></li><li>I presented rough ideas for a pretty complex system in a <a class='urllink' href='http://www.oss-watch.ac.uk/events/2006-04-10-12/presentations/slides_klee/html/index.html' rel='nofollow'>talk</a> that I gave at the conference Open Source and Sustainability 2006.  I called this system the <em>heavy weight solution</em>.  Due to it's complexity and due to liability problems, however, I don't think that it is feasible. - <a class='wikilink' href='/Profiles/Feklee'>feklee</a>
+<div class='vspace'></div></li><li>One may want to use claimid or openid for giving people an identity.
+<div class='vspace'></div></li><li>One may want to embed technology for filing e.g. requests for software extensions right 
+into applications, in order to make things as simple as possible.  For example, users
+may be given the possibility to click a button in a dialog of an application.  This button
+redirects them to a forum where they can discuss feature extensions with other users, and
+where they can pledge money.  Moderators, may help define a precise specification, collect
+the money, and redirect it to the developer who did the best job.
+<div class='vspace'></div></li><li>It may be a good idea to include support for certificates (e.g. the ones by the <a class='urllink' href='http://www.lpi.org' rel='nofollow'>LPI</a>) into the system.  A certificates should be signed by the organization 
+that filed it, in order to make sure that it really belongs to the given user.  Certificates
+serve at least the following two purposes:
+<div class='vspace'></div><ul><li>When somone wants someone else to pursue a task, he may limit the people who he'll pay to
+the ones with a certain certificate.
+<div class='vspace'></div></li><li>People may document their personal success in acquiring new knowledge / learning by making
+their certificates public.  
+</li></ul></li></ul><div class='vspace'></div><h2>Advice for writing specifications</h2>
+<p>For advice concerning writing a specification for a formal URN namespace see the page on <a class='wikilink' href='/Main/RegFormalURN'>applying for a formal URN namespace</a>.
+</p>
+<p class='vspace'  style='background-color: #eee;'><span class='wikitrail'>&lt;&lt; <a class='wikilink' href='/Main/Goals'>Goals</a> | <a class='wikilink' href='/Main/Systems'>Systems</a> | <a class='wikilink' href='/Main/Applications'>Applications</a> &gt;&gt;</span>
+</p>
+</div>
+
+      </td>
+    </tr></table>
+<!--PageFooterFmt-->
+  <div id='wikifoot'>
+    <div class='footinfo'>Unless noted otherwise, this page is licensed under the <a
+href="http://creativecommons.org/licenses/by/2.5/">Creative Commons
+Attribution 2.5 License</a>.<br/>
+Last modification on 2007-Jun-16 at 08:31. Authors: <a href="/Profiles/Feklee">feklee</a>, fekee</div>
+  </div>
+<!--/PageFooterFmt-->
+</body>
+</html>

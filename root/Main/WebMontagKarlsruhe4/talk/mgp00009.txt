@@ -1,0 +1,19 @@
+
+Bsp. 1/6: A erstellt Spezifikation
+
+    +------------+
+    | Beschreib. |
+    | task-tag   | -> Öffentlichkeit (z.B. Mail.-Liste)
+    | paym-tag   |
+    | PGP-sig    |
+    +------------+
+
+<this-X-trade:task:
+ from=userA@a.com;date=2006-10-23;time=08-39-08:
+ tild=2006-11-23:
+ a.0.1>
+<this-X-trade:paym:
+ from=userA@a.com;date=2006-10-23;time=08-43-30:
+ task_from=userA@a.com;task_date=2006-10-23;task_time=08-39-08;
+ mini=10;maxi=20;curr=EUR:
+ a.0.1>

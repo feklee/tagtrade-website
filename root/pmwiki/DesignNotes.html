@@ -1,0 +1,140 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>TagTrade Wiki | PmWiki / DesignNotes browse</title>
+  <meta http-equiv="Content-type" content="text/html;charset=iso-8859-1" />
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel='stylesheet' href='/pmwiki/pub/skins/tagtrade/tagtrade.css' type='text/css' />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+
+</head>
+<body>
+<!--PageHeaderFmt-->
+  <div id='wikilogo'><a href=''><img src='/pmwiki/pub/skins/tagtrade/tagtrade-32.gif'
+    alt='TagTrade Wiki' border='0' /></a></div>
+  <div id='wikihead'>
+  </div>
+<!--/PageHeaderFmt-->
+  <table id='wikimid' width='100%' cellspacing='0' cellpadding='0'><tr>
+<!--PageLeftFmt-->
+      <td id='wikileft' valign='top'>
+        <p class='sidehead'> <a class='wikilink' href='/Main/HomePage'>Main</a>
+</p><ul><li><a class='wikilink' href='/Main/Systems'>Systems</a>
+</li><li><a class='wikilink' href='/Main/DiscussionGroups'>Discussion groups</a>
+</li><li><a class='wikilink' href='/Main/Jabber'>Jabber group chat</a>
+</li><li><a class='wikilink' href='/Main/Irc'>IRC channel</a>
+</li><li><a class='wikilink' href='/Main/Events'>Events</a>
+</li><li><a class='wikilink' href='/Main/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Main/WikiSandbox'>Wiki sandbox</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Devel/HomePage'>Devel</a>
+</p><ul><li><a class='wikilink' href='/Devel/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Devel/BackEnd'>Back end</a>
+</li><li><a class='wikilink' href='/Devel/FrontEnd'>Front end</a>
+</li><li><a class='wikilink' href='/Devel/AuthoringPages'>Authoring pages</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Profiles/HomePage'>Profiles</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/PmWiki/PmWiki'>PmWiki</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/DocArchive/HomePage'>Doc archive</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/Portal/HomePage'>Portal</a>
+</p><ul><li><a class='wikilink' href='/Portal/WikiSandbox'>Wiki sandbox</a>
+</li></ul>
+</td>
+<!--/PageLeftFmt-->
+      <td id='wikibody' valign='top'>
+<!--PageTitleFmt-->
+        <div id='wikititle'>
+          <div class='pagegroup'><a href='/PmWiki'>PmWiki</a> /</div>
+          <h1 class='pagetitle'>DesignNotes</h1></div>
+<!--PageText-->
+<div id='wikitext'>
+<p>
+<a name='trailstart' id='trailstart'></a> 
+</p><div style="clear:right; float:right; font-size:smaller; background-color:#eee;" >
+<p><span class='wikitrail'>&lt; <a class='wikilink' href='/PmWiki/PmWikiPhilosophy'>PmWiki philosophy</a> | <a class='wikilink' href='/PmWiki/DocumentationIndex#trailstart#trailend'>Documentation Index</a> | <a class='wikilink' href='/PmWiki/ReleaseNotes'>Release notes</a> &gt;</span> 
+</p></div>
+<div style="clear:right;" >
+</div>
+<p>Here are some of the features and notes about PmWiki's design decisions.  
+Many of these derive directly from the <a class='wikilink' href='/PmWiki/PmWikiPhilosophy'>PmWiki Philosophy</a> and lots of discussion on the <a class='wikilink' href='/PmWiki/MailingLists'>mailing lists</a>.
+</p>
+<div class='vspace'></div><ul><li><a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Flat%20File%20Advantages' rel='nofollow'>PmWiki:Flat File Advantages</a> - why PmWiki uses flat files to store pages instead of an SQL database
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Hierarchical%20Groups' rel='nofollow'>PmWiki:Hierarchical Groups</a> - why PmWiki doesn't support nested groups
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Page%20Locking' rel='nofollow'>PmWiki:Page Locking</a> - how PmWiki works without locking pages (see also <a class='wikilink' href='/PmWiki/SimultaneousEdits'>simultaneous edits</a>)
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Page%20File%20Format' rel='nofollow'>PmWiki:Page File Format</a> - the format of PmWiki's page files
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Search%20Improvements' rel='nofollow'>PmWiki:Search Improvements</a> - why PmWiki has a native search engine
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/File%20Permissions' rel='nofollow'>PmWiki:File Permissions</a> - some information about PmWiki's file permission settings
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Wiki%20Group%20Motivation' rel='nofollow'>PmWiki:Wiki Group Motivation</a> - why WikiGroups
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/WYSIWYG' rel='nofollow'>PmWiki:WYSIWYG</a> - why not WYSIWYG.
+</li></ul><div class='vspace'></div><div class='faq' > <a name='faq' id='faq'></a> 
+<p class='vspace question'> Why doesn't PmWiki  use hierarchical / nested groups?</p>
+<p> It essentially comes down to figuring out how to handle 
+page links between nested groups; if someone can figure out 
+an obvious, intuitive way for authors to
+do that, then nested groups become plausible.  See <a class='selflink' href='/PmWiki/DesignNotes'>Design Notes</a>
+and <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Hierarchical%20Groups' rel='nofollow'>PmWiki:Hierarchical Groups</a>.
+</p>
+<p class='vspace question'> Why don't PmWiki's scripts have a closing ?&gt; tag?</p>
+<p> All of PmWiki's scripts now omit the closing ?&gt; tag.  The tag is not
+required, and it avoids problems with unnoticed spaces or blank
+lines at the end of the file.  Also, some file transfer protocols
+may change the newline character(s) in the file, which can also
+cause problems.  See also the <a class='urllink' href='http://php.net/manual/en/language.basic-syntax.instruction-separation.php' rel='nofollow'>Instruction separation</a> page in the <a class='urllink' href='http://php.net/manual/en/index.php' rel='nofollow'>PHP manual</a>.
+</p>
+<p class='vspace question'> Does PmWiki support WYSIWYG editing (or something like the FCKEditor)?</p>
+<p> Short answer:  PmWiki provides GUI buttons in a toolbar for common markups, but otherwise does not have WYSIWYG editing.  For the reasons why, see <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/WYSIWYG' rel='nofollow'>PmWiki:WYSIWYG</a>.
+</p>
+<p class='vspace'> 
+</p></div><div style="clear:right; float:right; font-size:smaller; background-color:#eee;" >
+<p><span class='wikitrail'>&lt; <a class='wikilink' href='/PmWiki/PmWikiPhilosophy'>PmWiki philosophy</a> | <a class='wikilink' href='/PmWiki/DocumentationIndex#trailstart#trailend'>Documentation Index</a> | <a class='wikilink' href='/PmWiki/ReleaseNotes'>Release notes</a> &gt;</span> 
+</p></div>
+<p><a name='trailend' id='trailend'></a>
+<br clear='all' />
+</p><div  style='background-color: #ffe; border-top: 1px solid black; font-size: .8em;' > 
+<p>This page may have <span class='commentout-pmwikiorg'> a more recent version on <a class='urllink' href='http://www.pmwiki.org' rel='nofollow'>pmwiki.org</a>: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/DesignNotes' rel='nofollow'>PmWiki:DesignNotes</a>, and </span> a talk page: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/DesignNotes-Talk' rel='nofollow'>PmWiki:DesignNotes-Talk</a>.
+</p></div>
+</div>
+
+      </td>
+    </tr></table>
+<!--PageFooterFmt-->
+  <div id='wikifoot'>
+    <div class='footinfo'></div>
+  </div>
+<!--/PageFooterFmt-->
+</body>
+</html>

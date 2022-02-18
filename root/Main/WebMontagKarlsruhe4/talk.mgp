@@ -1,0 +1,321 @@
+%% Diese Datei ist kompatibel mit MagicPoint 1.11b
+%% 
+%% Felix E. Klee <felix.klee@inka.de>
+%%
+%deffont "standard" xfont "Bitstream Vera Sans" "iso8859-1"
+%deffont "standard_b" xfont "Bitstream Vera Sans:style=Bold" "iso8859-1"
+%deffont "footnote" xfont "Bitstream Vera Sans" "iso8859-1", size 4
+%deffont "typewriter" xfont "Courier 10 Pitch" "iso8859-1"
+%deffont "typewriter_b" xfont "Courier 10 Pitch:style=Bold" "iso8859-1"
+%deffont "diagram" xfont "Courier 10 Pitch" "iso8859-1", size 4, vgap 0, hgap 0
+%deffont "tag" xfont "Courier 10 Pitch" "iso8859-1", size 3, vgap 0, hgap 0
+%deffont "chapter" xfont "Bitstream Vera Sans" "iso8859-1", size 8, center, fore "white", vgap 150
+%deffont "chapter_sub" xfont "Bitstream Vera Sans" "iso8859-1", size 4, center, fore "white", vgap 50
+%% Further good fonts: Bitstream Vera Sans, Bitstream Charter
+%% 
+%% Presettings for lines and indented lines:
+%default 1 area 90 90, leftfill, size 2, fore "white", back "black"
+%default 1 font "standard_b"
+%%default 1 bgrad 0 0 256 0 0 "blue" "black"
+%default 2 size 7, vgap 10, prefix " "
+%default 3 size 2, bar "gray70", vgap 10
+%default 4 size 5, fore "white", vgap 30, prefix " ", font "standard"
+%tab 1 size 5, vgap 40, prefix "  ", icon box "gray40" 50
+%tab 2 size 4, vgap 40, prefix "      ", icon arc "gray40" 50
+%tab 3 size 3, vgap 40, prefix "            ", icon delta3 "gray40" 40
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+%center
+%nodefault, font "standard_b", size 10, vgap 150, fore "white"
+
+%vgap 0
+Tag Trade
+%vgap 20
+
+%nodefault, font "standard", size 4
+Felix Klee
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Inhalt
+
+	Worum geht's?
+	Was es gibt
+	Nachteile
+	Forderungen
+	Lösungsvorschlag
+	Beispiel
+	Herausforderungen
+	Anwendungen
+	Ende
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Worum geht's?
+
+	Finanzierung kleiner Aufgaben
+	Beispiel Freie Software:
+		Entwicklung von Erweiterungen
+		Fernwartung
+		Erstellen von Grafiken
+		...
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Was es gibt
+
+	Spenden
+	Ad-hoc-Zahlungen
+	Google Answers
+	Affero
+	OpenBuild.net
+	Fundable.org
+	Bounty County
+	Rent a Coder
+	...
+
+%font "footnote"
+http://www.tagtrade.org/Main/OtherSystems
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Nachteile
+ 
+	Spenden: Kein Handel
+	Ad-hoc-Zahlungen: Umständl., teuer, Vertr.-Probl.
+	Google Answers: Zentral
+	Affero: Kein Handel, (Zentral)
+	OpenBuild.org: Zentral
+	Fundable.org: Zentral
+	Bounty County: Zentral
+	Rent a Coder: Zentral, Teuer, keine kleinen Aufg.
+
+Zentral: Beständigkeit?, Interoperabilät?, Zensur
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Forderungen
+
+	Einfachheit
+	Schnelligkeit
+	Gute Bezahlung
+	Vertrauen
+	Unabhängigkeit
+
+%font "footnote"
+http://www.tagtrade.org/Main/Goals
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Lösungsvorschlag - Tag Trade
+
+Öffentliche Nachrichten mit Tags versehen.
+
+Tags:
+	Identifiz. Aufgaben, Zahlungen, Bewertungen, ...
+	Stellen Relationen her.
+	Sind leicht erkennbar.
+	Sind maschinenlesbar.
+
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Beispiel - Zusammenfassung
+
+	Anwender A erstellt Spezifikation
+	Anwender B unterstützt Spezifikation
+	Entwickler E startet
+	E ist fertig
+	A, B zahlen E
+	Bewertung
+
+%font "footnote"
+http://www.tagtrade.org/Portal/URNXTradeA-0-1
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Bsp. 1/6: A erstellt Spezifikation
+
+%font "diagram"
+    +------------+
+    | Beschreib. |
+    | task-tag   | -> Öffentlichkeit (z.B. Mail.-Liste)
+    | paym-tag   |
+    | PGP-sig    |
+    +------------+
+%font "tag"
+
+<this-X-trade:task:
+ from=userA@a.com;date=2006-10-23;time=08-39-08:
+ tild=2006-11-23:
+ a.0.1>
+<this-X-trade:paym:
+ from=userA@a.com;date=2006-10-23;time=08-43-30:
+ task_from=userA@a.com;task_date=2006-10-23;task_time=08-39-08;
+ mini=10;maxi=20;curr=EUR:
+ a.0.1>
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Bsp. 2/6: B unterstützt Spez.
+
+%font "diagram"
+    +------------+
+    | Beschreib. |
+    | paym-tag   | -> Öffentlichkeit
+    | PGP-sig    |
+    +------------+
+%font "tag"
+
+<this-X-trade:paym:
+ from=userB@a.com;date=2006-10-23;time=08-45-17:
+ task_from=userA@a.com;task_date=2006-10-23;
+ task_time=08-39-08;
+ mini=5;maxi=10;curr=EUR:
+ a.0.1>
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Bsp. 3/6: Entwickler startet
+
+%font "diagram"
+    +------------+
+    | Beschreib. |
+    | strt-tag   | -> Öffentlichkeit
+    | PGP-sig    |
+    +------------+
+%font "tag"
+
+<this-X-trade:strt:
+ from=devel@x.net;date=2006-10-23;time=08-53-41:
+ task_from=userA@a.com;task_date=2006-10-23;
+ task_time=08-39-08;
+ tild=2006-11-15:
+ a.0.1>
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Bsp. 4/6: Entwickler fertig
+
+%font "diagram"
+    +----------+
+    | Lösung   |
+    | done-tag | -> Öffentlichkeit
+    | PGP-sig  |
+    +----------+
+%font "tag"
+
+<this-X-trade:done:
+ from=devel@x.net;date=2006-10-23;time=08-55-17:
+ task_from=userA@a.com;task_date=2006-10-23;
+ task_time=08-39-08:
+ a.0.1>
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Bsp. 5/6: A, B zahlen E ...
+
+... mittels Überweisung, Paypal, E-gold, o.ä.
+%%
+%% ----------------------------------------------------------------------------
+%%
+%page
+
+Bsp. 6/6: Bewertung A, B <-> E
+
+%font "diagram"
+    +-----------+
+    | Kommentar |
+    | rate-tag  | -> Öffentlichkeit
+    | PGP-sig   |
+    +-----------+
+%font "tag"
+
+<this-X-trade:strt:
+ from=userA@a.com;date=2006-10-23;time=09-10-43:
+ task_from=userA@a.com;task_date=2006-10-23;
+ task_time=08-39-08;
+ ptnr=devel@x.net;rate=0.7:
+ a.0.1>
+%%
+%% ----------------------------------------------------------------------------
+%%
+
+%page
+
+Herausforderungen
+
+	Verbesserung des Standards: Einbindung in Semantic-Web, URLs als Tags, ...
+	Entwicklung von Hilfsmitteln: Portale, Plugins, Berater, Treuhänder, ...
+	Bootstrapping
+
+%font "footnote"
+http://www.tagtrade.org/Main/Systems
+http://www.tagtrade.org/Portal
+http://www.tagtrade.org/Devel/HomePage
+%%
+%% ----------------------------------------------------------------------------
+%%
+
+%page
+
+Anwendungen
+
+	Entwicklung Freier Software
+	Wartung / Beratung
+	Bezahltes Lernen:
+		Einschränkung Auftragnehmer
+		Hilfe durch Tutoren
+		Großzügigkeit
+	(Handel mit materiellen Gütern)
+	...
+
+%font "footnote"
+http://tagtrade.localhost/Main/Applications
+%%
+%% ----------------------------------------------------------------------------
+%%
+
+%page
+
+Ende
+
+	Bemerkungen, Kritik, Interesse?
+	Weiteres: http://www.tagtrade.org/
+	Kontakt: Felix E. Klee <felix.klee@inka.de>
+
+%%
+%% For EMACS:
+%% Local Variables:
+%% coding: iso-8859-1
+%% mode:flyspell
+%% mode:auto-fill
+%% fill-column:79
+%% End:
+%% Local IspellDict: german8

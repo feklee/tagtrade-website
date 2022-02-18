@@ -1,0 +1,11 @@
+
+Lösungsvorschlag - Tag Trade
+
+Öffentliche Nachrichten mit Tags versehen.
+
+Tags:
+Identifiz. Aufgaben, Zahlungen, Bewertungen, ...
+Stellen Relationen her.
+Sind leicht erkennbar.
+Sind maschinenlesbar.
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>TagTrade Wiki | PmWiki / Forms browse</title>
+  <meta http-equiv="Content-type" content="text/html;charset=iso-8859-1" />
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel='stylesheet' href='/pmwiki/pub/skins/tagtrade/tagtrade.css' type='text/css' />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+
+</head>
+<body>
+<!--PageHeaderFmt-->
+  <div id='wikilogo'><a href=''><img src='/pmwiki/pub/skins/tagtrade/tagtrade-32.gif'
+    alt='TagTrade Wiki' border='0' /></a></div>
+  <div id='wikihead'>
+  </div>
+<!--/PageHeaderFmt-->
+  <table id='wikimid' width='100%' cellspacing='0' cellpadding='0'><tr>
+<!--PageLeftFmt-->
+      <td id='wikileft' valign='top'>
+        <p class='sidehead'> <a class='wikilink' href='/Main/HomePage'>Main</a>
+</p><ul><li><a class='wikilink' href='/Main/Systems'>Systems</a>
+</li><li><a class='wikilink' href='/Main/DiscussionGroups'>Discussion groups</a>
+</li><li><a class='wikilink' href='/Main/Jabber'>Jabber group chat</a>
+</li><li><a class='wikilink' href='/Main/Irc'>IRC channel</a>
+</li><li><a class='wikilink' href='/Main/Events'>Events</a>
+</li><li><a class='wikilink' href='/Main/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Main/WikiSandbox'>Wiki sandbox</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Devel/HomePage'>Devel</a>
+</p><ul><li><a class='wikilink' href='/Devel/TODO'>To do</a>
+</li><li><a class='wikilink' href='/Devel/BackEnd'>Back end</a>
+</li><li><a class='wikilink' href='/Devel/FrontEnd'>Front end</a>
+</li><li><a class='wikilink' href='/Devel/AuthoringPages'>Authoring pages</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='/Profiles/HomePage'>Profiles</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/PmWiki/PmWiki'>PmWiki</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/DocArchive/HomePage'>Doc archive</a>
+</p>
+<p class='vspace sidehead'> <a class='wikilink' href='/Portal/HomePage'>Portal</a>
+</p><ul><li><a class='wikilink' href='/Portal/WikiSandbox'>Wiki sandbox</a>
+</li></ul>
+</td>
+<!--/PageLeftFmt-->
+      <td id='wikibody' valign='top'>
+<!--PageTitleFmt-->
+        <div id='wikititle'>
+          <div class='pagegroup'><a href='/PmWiki'>PmWiki</a> /</div>
+          <h1 class='pagetitle'>Forms</h1></div>
+<!--PageText-->
+<div id='wikitext'>
+<p>
+<a name='trailstart' id='trailstart'></a> 
+</p><div style="clear:right; float:right; font-size:smaller; background-color:#eee;" >
+<p><span class='wikitrail'>&lt; <a class='wikilink' href='/PmWiki/MarkupExpressions'>Markup expressions</a> | <a class='wikilink' href='/PmWiki/DocumentationIndex#trailstart#trailend'>Documentation Index</a> | <a class='wikilink' href='/PmWiki/SimultaneousEdits'>Simultaneous edits</a> &gt;</span> 
+</p></div>
+<div style="clear:right;" >
+</div>
+<p>This page explains how you can embed input forms into wiki pages.
+</p>
+<p class='vspace'>Input forms don't actually handle processing of the form data -- the feature simply allows creation of forms inside wiki pages. Forms processing can be found in the Cookbook (see below).
+</p>
+<div class='vspace'></div><h2>Markup</h2>
+<p>Two directives are used to begin and end forms:
+</p>
+<div class='vspace'></div><pre>    (:input form "<em>url</em>" <em>method</em>:)
+    ...
+    (:input end:)
+</pre><p class='vspace'>The <code class='escaped'>(:input form:)</code> directive starts a form that will post to <em>url</em> using the supplied <em>method</em>.  The <em>url</em> must be in quotes.  If the url is omitted, then the current page is assumed.  If <em>method</em> is omitted then "POST" is assumed.  The <code class='escaped'>(:input end:)</code> directive ends the current form.
+</p>
+<p class='vspace'>Note that this feature doesn't ensure that the form output is correct HTML -- it assumes the author knows a little bit of what he or she is doing. Notably, (:input form:) and (:input end:) shouldn't appear inside tables, and all form fields and controls should be inside an (:input form:)...(:input end:) block.
+</p>
+<p class='vspace'><a name='standardinputcontrols' id='standardinputcontrols'></a>
+</p><h3>Standard input controls</h3>
+<p>The standard input controls are:
+</p>
+<div class='vspace'></div><pre>    (:input text <em>name</em> <em>value</em> size=<em>n</em>:)
+    (:input hidden <em>name</em> <em>value</em>:)
+    (:input password <em>name</em> <em>value</em>:)
+    (:input radio <em>name</em> <em>value</em>:)
+    (:input checkbox <em>name</em> <em>value</em>:)
+    (:input <a href='#select'>select</a> <em>name</em> <em>value</em> <em>label</em>:)
+    (:input <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/InputDefault' rel='nofollow'>default</a> <em>default-name</em> <em>default-value</em>:) 
+    (:input submit <em>name</em> <em>value</em>:)
+    (:input textarea <em>name</em> <em><code class='escaped'>[=value=]</code></em> rows=<em>n</em> cols=<em>n</em>:)
+    (:input reset <em>name</em> <em>label</em>:)
+    (:input file <em>name</em> <em>label</em>:)
+    (:input image <em>name</em> <em>"src"</em> <em>alt</em>:)
+</pre><p class='vspace'>Where <em>name</em> and <em>value</em> are in the HTML syntax: name="addr" value="808 W Franklin".
+</p>
+<p class='vspace'>For most controls the markup has the form:
+</p>
+<div class='vspace'></div><pre>    (:input <em>type</em> <em>name</em> <em>value</em> <em>parameter=value</em>:)
+</pre><p class='vspace'>where <em>type</em> is the type of input element (described below), <em>name</em> is the name of the control, <em>value</em> is its initial value, and parameters are used to specify additional attributes to the control. If <em>value</em> contains spaces, enclose it in quotes; if it contains newlines (for textarea and hidden elements), enclose it in <code class='escaped'>[=...=]</code>. 
+</p>
+<p class='vspace'>For example, the following creates a text input control with a size of 30 characters:
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>(:input text authorid "Jane Doe" size=30:)
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><p><input type='text' name='authorid' value='Jane Doe' class='inputbox' size='30' />
+</p>
+</td></tr></table>
+<p class='vspace'>For convenience, an author can also specify name and value arguments directly using <code class='escaped'>name=</code> and <code class='escaped'>value=</code> attributes (same as HTML):
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>(:input text name=authorid value="Jane Doe" size=30:)
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><p><input type='text' name='authorid' value='Jane Doe' class='inputbox' size='30' />
+</p>
+</td></tr></table>
+<p class='vspace'>For the <code>textarea</code> control a value can be set from PmWiki 2.2.0beta45 onwards. Enclose the value in <code class='escaped'>[=...=]</code> if  it contains spaces or new lines.
+</p>
+<p class='vspace'>The <code class='escaped'>submit</code> control will more often be written as:
+</p>
+<div class='vspace'></div><pre>    (:input submit value=<em>label</em>:)
+</pre><p class='vspace'>Here's a more complete example, e.g., for a login prompt:
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>
+(:input form "http://www.example.com":)
+(:input hidden action login:)
+||     Name:||(:input text username:)    ||
+|| Password:||(:input password password:)||
+|| ||(:input submit value="Log In":) ||
+(:input end:)
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><form action='http://www.example.com' method='post'>
+<p><input type='hidden' name='action' value='login' />
+</p><table width='100%'><tr ><td  align='right'>Name:</td><td  align='left'><input type='text' name='username' class='inputbox' /></td></tr>
+<tr ><td  align='right'>Password:</td><td ><input type='password' name='password' class='inputbox' /></td></tr>
+<tr ><td >&nbsp;</td><td  align='left'><input type='submit' value='Log In' class='inputbutton' /></td></tr>
+</table></form>
+</td></tr></table>
+<p class='vspace'><a name='select' id='select'></a>
+</p><h2><code class='escaped'>(:input select ... :)</code></h2>
+<p>The basic form of a select box is a sequence of options:
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>
+(:input form:)
+(:input select name=abc value=1 label=alpha :)
+(:input select name=abc value=2 label=beta  :)
+(:input select name=abc value=3 label=gamma :)
+(:input submit:)
+(:input end:)
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><form method='post'>
+<p><select name='abc' class='inputbox'><option value='1'>alpha</option><option value='2'>beta</option><option value='3'>gamma</option></select><input type='submit' class='inputbutton' />
+</p></form>
+</td></tr></table>
+<p class='vspace'>The values can be specified positionally:
+</p><pre> (:input select abc 1 alpha :)
+</pre><p class='vspace'>We can specify the size of the selection box:
+</p><pre> (:input select abc 1 alpha size=3 :)
+</pre><p class='vspace'>You can specify a multiple select box:
+</p><pre> (:input select abc 1 alpha size=3 multiple:)
+</pre><p class='vspace'>To have an element selected, use <code>selected=selected</code>:
+</p><pre> (:input select abc 2 beta selected=selected:)
+</pre><p class='vspace'>Note that to have two select boxes inline, not only should you give them different <code>name=</code> parameters, but also place a separator, like a character, <code class='escaped'>&amp;nbsp;</code> or even the null sequence <code class='escaped'>[==]</code> between them:
+</p><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>(:input form:)
+(:input select name=FIRST value=1:)(:input select name=FIRST value=2:)[==]
+(:input select name=SECOND value=3:)(:input select name=SECOND value=4:)
+(:input end:)
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><form method='post'>
+<p><select name='FIRST' class='inputbox'><option value='1'>1</option><option value='2'>2</option></select>
+<select name='SECOND' class='inputbox'><option value='3'>3</option><option value='4'>4</option></select></form>
+</p>
+</td></tr></table>
+<div class='vspace'></div><h2>See Also</h2>
+<ul><li><a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Input%20Default' rel='nofollow'>Cookbook:Input Default</a> 
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Form%20Validation' rel='nofollow'>Cookbook:Form Validation</a> 
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Form%20Extensions' rel='nofollow'>Cookbook:Form Extensions</a> 
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Input%20Forms%20and%20JavaScript' rel='nofollow'>Cookbook:Input Forms and JavaScript</a> 
+</li></ul><p class='vspace'>Compatible recipes:
+</p><ul><li><a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/PmForm' rel='nofollow'>Cookbook:PmForm</a> 
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Fox' rel='nofollow'>Cookbook:Fox</a> 
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Wiki%20Forms' rel='nofollow'>Cookbook:Wiki Forms</a> 
+</li><li><a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/ProcessForm' rel='nofollow'>Cookbook:ProcessForm</a> 
+</li></ul><p class='vspace'> 
+</p><div style="clear:right; float:right; font-size:smaller; background-color:#eee;" >
+<p><span class='wikitrail'>&lt; <a class='wikilink' href='/PmWiki/MarkupExpressions'>Markup expressions</a> | <a class='wikilink' href='/PmWiki/DocumentationIndex#trailstart#trailend'>Documentation Index</a> | <a class='wikilink' href='/PmWiki/SimultaneousEdits'>Simultaneous edits</a> &gt;</span> 
+</p></div>
+<p><a name='trailend' id='trailend'></a>
+<br clear='all' />
+</p><div  style='background-color: #ffe; border-top: 1px solid black; font-size: .8em;' > 
+<p>This page may have <span class='commentout-pmwikiorg'> a more recent version on <a class='urllink' href='http://www.pmwiki.org' rel='nofollow'>pmwiki.org</a>: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Forms' rel='nofollow'>PmWiki:Forms</a>, and </span> a talk page: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Forms-Talk' rel='nofollow'>PmWiki:Forms-Talk</a>.
+</p></div>
+</div>
+
+      </td>
+    </tr></table>
+<!--PageFooterFmt-->
+  <div id='wikifoot'>
+    <div class='footinfo'></div>
+  </div>
+<!--/PageFooterFmt-->
+</body>
+</html>
